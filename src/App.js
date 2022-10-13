@@ -33,6 +33,7 @@ function App() {
           <Route path="/teacherprojectlibrary" element={<TeacherProjectLibrary />} /> 
           <Route path="/teacherdashboard/studentprofiles" element={<TeacherDashboardStudentProfiles />} /> 
           <Route path="/teacherdashboard/helprequests" element={<TeacherDashboardHelpRequests />} /> 
+          
         </Routes>
       </BrowserRouter>
     </div>
