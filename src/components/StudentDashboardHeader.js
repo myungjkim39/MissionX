@@ -1,6 +1,6 @@
 import "./StudentDashboardHeader.css";
 
-function Header() {
+export default function Header() {
   return (
     <div className="header">
       <div className="left">
@@ -55,4 +55,3 @@ function Header() {
   );
 }
 
-export default Header;
