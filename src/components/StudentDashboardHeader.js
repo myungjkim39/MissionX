@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <div className="left">
         <img
-          src="NavBar/LevelUpWorks-blue.png"
+          src="/src-assets/NavBar/LevelUpWorks-blue.png"
           alt="Level Up Logo"
           className="logo"
         />
@@ -42,10 +42,10 @@ function Header() {
         <button className="projects-btn"> More Projects </button>
 
         <div className="flagimages">
-          <img src="NavBar/NZflag.png" alt="nzFlag" className="nzflag" />
+          <img src="/src-assets/NavBar/NZflag.png" alt="nzFlag" className="nzflag" />
 
           <img
-            src="NavBar/Maoriflag.png"
+            src="/src-assets/NavBar/Maoriflag.png"
             alt="Maoriflag"
             className="maoriflag"
           />
