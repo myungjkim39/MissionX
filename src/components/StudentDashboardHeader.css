@@ -1,0 +1,150 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  
+  .left,
+  .right {
+    display: flex;
+  }
+  
+  .left {
+    column-gap: 5vw;
+  }
+  
+  .logo {
+    height: 8vh;
+    width: 10vw;
+    margin-left: 2vw; 
+  }
+  
+  .projectName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  
+  h3 {
+    font-style: nunito, black;
+    font-size: 21px;
+    margin: 0;
+    color: #6C6C6C;
+  }
+  
+  p {
+    font-style: open sans, regular;
+    font-size: 14px;
+    margin: 4px;
+    color: #6C6C6C;
+  }
+  
+  .center {
+    display:flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: baseline;
+    margin-left: 1vw;
+  }
+  
+  
+  .circle {
+    color: #6C6C6C;
+    background-color: #FDF7C0;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #43c0f6;
+    border-style: solid;
+    margin-top: 25px;
+    font-size: 22px;
+    font-style: nunito, black, bold;
+  }
+  
+  .mini-circle {
+    color: #ffff;
+    width: 1vh;
+    height: 1vh;
+    border-radius: 80%;
+    border-color: #43c0f6;
+    justify-content: flex-start;
+    border-style: solid;
+  }
+  
+  .center {
+    display:flex;
+    
+  }
+  
+  .right {
+    gap: 1vw;
+    align-items: center;
+    margin-left: 16vw;
+  }
+  
+  .screen-btn {
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    opacity: 1;
+    background-color: orange;
+    font-size: 15px;
+    border-color: orange;
+    color: white;
+    font-style: nunito;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+  
+  .help-btn {
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    padding: 5px;
+    opacity: 1;
+    font-size: 15px;
+    border-color: red;
+    color: white;
+    font-style: nunito;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+  
+  .projects-btn {
+    width: 200px;
+    height: 35px;
+    background-color: #43c0f6;
+    padding: 5px;
+    opacity: 1;
+    font-size: 15px;
+    border-color: #43c0f6;
+    color: white;
+    font-style: nunito;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+  
+  .flagimages {
+    margin-bottom: 50px;
+  }
+  
+  .nzflag {
+    height: 12px;
+    opacity: 1;
+    margin-inline: 5px;
+  }
+  
+  .maoriflag {
+    width: 22px;
+    height: 12px;
+  }
+  
