@@ -1,0 +1,43 @@
+.progresstrackerWhite {
+  display: flex;
+  width: 70%;
+  background-color: #ffffff;
+  margin-bottom: 5vh;
+  padding: 20px 10px;
+  border-radius: 15px;
+  
+  
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 5px;
+  align-items: center;
+  color: #6c6c6c;
+  font-family: "Nunito", sans-serif;
+  font-size: 5px;
+  /* display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: row; */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.progressTrackerName {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #707070;
+  background-color: #ffffff;
+  padding-bottom: 1vh;
+}
+
+.progressTrackerCompletedPojects {
+  color: #707070;
+  font-size: 14px;
+  background-color: #ffffff;
+}
