@@ -1,0 +1,122 @@
+
+
+/*Imported fonts*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&family=Open+Sans:wght@700&display=swap');
+
+
+
+  .progressTrackerAll{
+  margin: 50px;
+  }
+
+/* Llight Big Box*/
+  .progressTrackerLightBackground{
+   background-color:#e0f4fd ;
+   border-radius: 30px;
+   width: 1200px;
+   height: 800px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   text-align: left;
+   margin: 109px 50px 83px  236px;  
+}
+
+/*Main Header*/
+.progressTrackerHeader{
+   color:#6C6C6C ;
+   font-family: 'Nunito', sans-serif;
+   margin-left: 100px;
+   margin-bottom: 20px;
+   font-weight: 600;
+   font-size: 30px;
+}
+
+/*Export option*/
+
+.progressTrackerExport{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   margin-right: 50px;
+   margin-top: 50px;
+   color:#6C6C6C ;
+   font-family: 'Open Sans', sans-serif;
+   
+}
+
+/*export icon ans text*/
+
+.ExportIcon img{
+width: 50%;
+margin-top: 50px;
+
+}
+
+.exportText{
+ margin-top: 50px;
+}
+
+.studentRecoContainer{
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 100px;  
+width: 110%;
+}
+
+/*ScrollBar*/
+.studentRecoContainer{
+background-color: none;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+width: 115%;
+  height: 500px;
+
+
+}
+
+
+/*
+::-webkit-scrollbar{
+
+   width: 1vw;
+   overflow-x: scroll;
+ 
+ }
+ 
+::-webkit-scrollbar-track{
+   border-radius: 5px;
+   
+ 
+   background-color: aliceblue;
+   
+ }
+::-webkit-scrollbar-thumb{
+   border-radius:5px;
+   background-color: deepskyblue;
+ }
+::-webkit-scrollbar-thumb:hover{
+   background-color: aqua;
+ }
+
+*/
+/*Position of content-making it ontop of the background*/
+
+
+.progressTrackerAll{
+   z-index: 1;
+   position: absolute;
+}
+
+
+
+
+
+

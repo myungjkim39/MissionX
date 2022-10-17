@@ -1,0 +1,13 @@
+.teacher-profile{
+    background-color: #d36e6e;
+    height: 100vh;
+}
+.teacherprofile-options {
+    height: 60vh;
+    width: 261px;
+    background-color: darkgrey;
+    border-radius: 30px;
+}
+.teacher-info {
+    color: aquamarine;
+}
