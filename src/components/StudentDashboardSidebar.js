@@ -2,11 +2,13 @@ import { useState } from 'react';
 import React from "react";
 import './StudentDashboardSidebar.css';
 import RawiriFletcher from '../images/RawiriFletcher.png';
-import ProgressTracker from "../images/progressTrackerSelected.png";
-import StudentProfiles from "../images/helpRequestsSelected.png";
-import HelpRequest from "../images/studentProfilesSelected.png";
-import ProjectSubmissions from "../images/projectSubmissionsSelected.png";
-import ProjectLibrary from "../images/projectLibrarySelected.png";
+import LearningObjectives from "../images/src-assets/StudentDashboard/learningObjectivesSelected.png";
+import Instructions from "../images/src-assets/StudentDashboard/instructions.png";
+import VideoTutorial from "../images/src-assets/StudentDashboard/video.png";
+import MakeProject from "../images/src-assets/StudentDashboard/makeProject.png";
+import SubmitProject from "../images/src-assets/StudentDashboard/submitProject.png";
+import BonusChallenge from "../images/src-assets/StudentDashboard/bonusChallenge.png";
+import TakeTheQuiz from "../images/src-assets/StudentDashboard/takeTheQuiz.png";
 import ArrowLeft from "../images/arrowLeft.png";
 import UserProfile from "../images/userprofile.png";
 import Settings from "../images/settings.png";
@@ -38,32 +40,42 @@ export default function StudentSidebar() {
         </div>
                 
                 <div className="Item">
-                    <img src={ProgressTracker} className="Sidebar-icons" alt="" />
-                    <span className="Sidebar-Text">PROGRESS TRACKER</span>
+                    <img src={LearningObjectives} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">LEARNING OBJECTIVES</span>
                 </div>
                 
                 <div className="Item">
-                    <img src={StudentProfiles} className="Sidebar-icons" alt="" />
-                    <span className="Sidebar-Text">STUDENTS PROFILE</span>
+                    <img src={Instructions} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">INSTRUCTIONS</span>
                 </div>
 
 
                 <div className="Item">
                                     {/* <link to="/HelpRequest"> */}
-                    <img src={HelpRequest} className="Sidebar-icons" alt="" />
-                    <span className="Sidebar-Text">HELP REQUEST</span>
+                    <img src={VideoTutorial} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">VIDEO TUTORIAL</span>
                 {/* </link> */}
                     </div>
                     
 
              <div className="Item">
-                    <img src={ProjectSubmissions} className="Sidebar-icons" alt="" />
-                    <span className="Sidebar-Text">PROJECT SUBMISSIONS</span>
+                    <img src={MakeProject} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">MAKE PROJECT</span>
                 </div>
 
                  <div className="Item">
-                    <img src={ProjectLibrary} className="Sidebar-icons" alt="" />
-                    <span className="Sidebar-Text">PROJECT LIBRARY</span>
+                    <img src={SubmitProject} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">SUBMIT PROJECT</span>
+                </div>
+
+                <div className="Item">
+                    <img src={BonusChallenge} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">BONUS CHALLENGE</span>
+                </div>
+
+                <div className="Item">
+                    <img src={TakeTheQuiz} className="Sidebar-icons" alt="" />
+                    <span className="Sidebar-Text">TAKE THE QUIZ</span>
                 </div>
 
             <div className="arrow-min">

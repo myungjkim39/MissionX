@@ -32,7 +32,7 @@ function App() {
           <Route path="/teacherdashboard/progresstracker" element={<TeacherDashboardProgressTracker />} /> 
           <Route path="/teacherprojectlibrary" element={<TeacherProjectLibrary />} /> 
           <Route path="/teacherdashboard/studentprofiles" element={<TeacherDashboardStudentProfiles />} /> 
-          <Route path="/teacherdashboard/helprequests" element={<TeacherDashboardHelpRequests />} /> 
+          <Route path="/TeacherDashboard/HelpRequests" element={<TeacherDashboardHelpRequests />} /> 
           
         </Routes>
       </BrowserRouter>
