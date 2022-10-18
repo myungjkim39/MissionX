@@ -102,3 +102,11 @@
     height: 80px;
   }
   
+/* StudentDashProject content.js */
+  .project-screenshot {
+    display: flex;
+    width: 78vw;
+    height: 65vh;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
