@@ -8,7 +8,7 @@ export default function PartTwo() {
  /*the image is from the public folder*/
     <div className='footer'>
        
-            <img src='ImagesProgressTracker/Footer.jpg' alt='footerimage'/>
+            <img src='/ImagesProgressTracker/Footer.jpg' alt='footerimage'/>
        
   
     </div>

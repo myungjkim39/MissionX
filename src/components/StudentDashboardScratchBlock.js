@@ -9,11 +9,12 @@ export default function ScratchBlock() {
       <div id="contentbox">
         <div id="innerbox">
           <div className="content">
-            <h1>Explore Scrach blocks</h1>
+            <h1>Explore Scratch blocks</h1>
             <p2>
               Learn the basic function of some basic scratch blocks such as
               “say,” “wait,” “go to” and “hide.”
             </p2>
+            <br />
             <div className="blocks">
               <div className="block1">
                 Look Blocks

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import React from "react";
 import './StudentDashboardSidebar.css';
 import RawiriFletcher from '../images/RawiriFletcher.png';
-import LearningObjectives from "../images/src-assets/StudentDashboard/learningObjectivesSelected.png";
+import LearningObjectives from "../images/src-assets/StudentDashboard/learningObjectives.png";
 import Instructions from "../images/src-assets/StudentDashboard/instructions.png";
 import VideoTutorial from "../images/src-assets/StudentDashboard/video.png";
 import MakeProject from "../images/src-assets/StudentDashboard/makeProject.png";
