@@ -10,6 +10,11 @@ html, body{
     height: 100vh;
     display: flex;
 }
+.helpRequest-boxContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 .help-container{
     display: flex;
         flex-direction: column;

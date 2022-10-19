@@ -1,13 +1,70 @@
+@import url(https://www.1001fonts.com/nunito-font.html);
 .teacher-profile{
-    background-color: #d36e6e;
     height: 100vh;
+    background-color: #EEEEEE;
+}
+.teacher-profile-side{
+    margin-top: 100px;
+    display: inline-flex;
 }
 .teacherprofile-options {
-    height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 204px;
+    left: 343px;
     width: 261px;
-    background-color: darkgrey;
+    height: 312px;
+    border: 2px solid #E2DFDF;
     border-radius: 30px;
 }
 .teacher-info {
-    color: aquamarine;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 412px;
+    width: 400px;
+    border: 2px solid #E2DFDF;
+    border-radius: 30px;
+    font-style: Nunito;
+    font-weight: bold;
+    color: #707070;
+}
+.teacher-btn1{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: skyblue;
+    border-style: solid;
+    color: skyblue;
+    width: 135px;
+    height: 25px;
+    font-weight: bold;
+}
+.back-projects{
+    margin-left: 700px;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 175px;
+    height: 30px;
+    background-color: rgb(216, 161, 58);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.back-dashboard{
+    width: 175px;
+    height: 30px;
+    background-color: rgb(255, 36, 255);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border-style: none;
 }
