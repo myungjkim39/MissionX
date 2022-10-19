@@ -110,3 +110,12 @@
     margin-left: 20px;
     margin-top: 20px;
   }
+
+/* StudentDashVideoTutorial.js */
+.video-screenshot {
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  margin: 5vh 15vw;
+}
+
