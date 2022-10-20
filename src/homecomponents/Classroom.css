@@ -1,0 +1,24 @@
+.Classroom{
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+.ClassroomImg{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 8rem;
+    height: 25%;
+    width: 25%;
+}
+.callToAction{
+    margin-left: 8rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    width: 50%;
+    height: 50%;
+    align-items: flex-end;
+}
+
+
+   
