@@ -38,7 +38,7 @@ function HelpRequest () {
   return (
     <div className="helprequest-mainContainer">
       <div className="help-request">
-        <h3>Help Request</h3>
+        <h3>HELP REQUEST</h3>
 
         <div className="reply-done">
         <div className="reply-tick">

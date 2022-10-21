@@ -10,6 +10,7 @@ html, body{
 .jasmina {
     padding-top: 30px;
     padding-left: 70px;
+    padding-bottom: 40px;
     width: 69px;
 }
 .Sidebar {
@@ -27,11 +28,12 @@ html, body{
     align-items: flex-end;
     margin-right: 0px;
     height: 8vh;
-    margin-left: auto;
+    /* margin-left: auto; */
     transition: 0.2s ease-in-out;
 }
 .sidebar-pinkarrow:hover{
     background-color: #B2E4FA;
+    padding-right: 10px;
 }
 .pinkarrow-min{
     margin-right: 10px;
