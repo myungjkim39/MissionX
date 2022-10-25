@@ -1,27 +1,40 @@
 import React from "react";
 import MyButton from './MyButton';
+import "./Navbar.css"
 
 
 function Navbar() {
     return (
-        <div className="Navbar">
+        <div className="navbar">
+            <div className="navlogo"></div>
             {/* add logo */}
-            <ul class= "navList">
-                <li class="navItem">
+            <div className= "navList">
+                
                     <MyButton buttonName="Home" />
-                </li>
-                <li class="navItem">
+                
                     <MyButton buttonName="Features" />
-                </li>
-                <li class="navItem">
+                
                     <MyButton buttonName="Teahers" />
-                </li>
-                <li class="navItem">
-                    <MyButton buttonName="Login | Signup" />
-                </li>
-            </ul>
-            {/* add lang */}
+            </div>
+
+            <div className="navrightContainer">
+                <div className="languageContainer">Lang
+
+                </div>
+
+                <div className="loginSignupContainer">
+  
+                    <button className="navItem navLogin">Register</button>
+                        <div className="NavloginSignupDivider"></div>
+                    <button className="navItem navSignup">Login</button>
+            
+                </div>
+            </div>
+                
+           
+        
         </div>
+        /* flex direction */
     )
 }
 export default Navbar;
