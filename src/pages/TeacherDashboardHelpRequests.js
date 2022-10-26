@@ -1,26 +1,28 @@
 import React from 'react'
 import Sidebar from '../components/TeacherSidebar.js';
-import TeacherNavbar from '../components/DashboardHeader.js';
+import TeacherNavbar from '../components/TeacherDashboardHeader.js';
 import HelpRequest from '../components/HelpRequest.js';
 import TeacherProfileViewer from '../components/TeacherProfileViewer.js';
+import Footer from '../Shared components/Footer';
 
 export default function TeacherHelpRequest() {
   return (
     <div>
-          <div className="teacher-dashboard-help-request">
-
-              {/* <div className="Dash-header">
+      <div className="teacher-dashboard-help-request">
+        
+              <div className="Dash-header">
                   <TeacherNavbar />
 
-              </div> */}
+              </div> 
+        {/* <div className="content-container"> */}
 
-              <div className="Teacher-Sidebar">
-                  <Sidebar />
-              </div>
+          <Sidebar />
 
-              <div className="Help-Request">
+
                   <HelpRequest />
-        </div>
+                  {/* </div> */}
+              
+              <Footer/>
         
                       {/* <div className="Teacher-Profile">
                   <TeacherProfileViewer />

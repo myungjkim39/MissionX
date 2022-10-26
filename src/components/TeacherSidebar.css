@@ -15,6 +15,7 @@ html, body{
 }
 .Sidebar {
     position: fixed;
+    margin-right: 800px;
     display: flex;
     flex-direction: column;
     width: 200px;
