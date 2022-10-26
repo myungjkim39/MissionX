@@ -18,14 +18,27 @@ const studentDatabase = [
   {name: "TOKIO", profileImage: Tokio, dateTime: dateTime}
 ]
 
-function HelpRequest () {
-          //   <HelpRequestBox name={student.name} image={student.profileImage} dateTime={student.dateTime} />
-          // const HelpRequestBox = ({name, image, dateTime}) = {
+function HelpRequestBox(props) {
+  console.log(props.profileImage)
+  return (
+      <div className="helpRequest-boxContainer">
+          <input type="checkbox" />
+          <div className="helprequest-secondContainer">
+            <img src={props.profileImage} className="student-img" alt="" />
+            <p className="helptext">{props.name} needs help with his project.</p>
+            <div className="date-container">
+              <div className="time-container">{dateTime}</div>
+            </div>
+          </div>
+        </div> 
+  );
+}
 
+function HelpRequest () {
   return (
     <div className="helprequest-mainContainer">
       <div className="help-request">
-        <h3>Help Request</h3>
+        <h3>HELP REQUEST</h3>
 
         <div className="reply-done">
         <div className="reply-tick">
@@ -40,121 +53,14 @@ function HelpRequest () {
 
         <div className="help-container">
 
-
-        {/* <div className="helpRequest-boxContainer">
-          <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={profileImage} className="student-img" alt="" />
-            <p className="helptext">{name} needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container">{dateTime}</div>
-            </div>
-          </div>
-        </div> */}
-
-          {/* studentDatabase.map(student = (
-          <HelpRequestBox name={student.name} image={student.profileImage} dateTime={student.dateTime} />
-          )) */}
-
-           <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={Aiden} className="student-img" alt="" />
-            <p className="helptext">AIDEN needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container"></div>
-            </div>
-          </div>
-          <br></br>
-
-           <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={Rawiri} className="student-img" alt="" />
-            <p className="helptext">RAWIRI needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container"></div>
-            </div>
-          </div>
-          <br></br>
-            
-           <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={Neveah} className="student-img" alt="" />
-            <p className="helptext">NEVEAH needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container"></div>
-            </div>
-          </div><br></br> 
-          
-          <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={Javier} className="student-img" alt="" />
-            <p className="helptext">JAVIER needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container">
-              </div>
-            </div>
-          </div><br></br>
-          
-          <input type="checkbox" />
-          <div className="helprequest-secondContainer">
-            <img src={Tokio} className="student-img" alt="" />
-            <p className="helptext">TOKIO needs help with his project.</p>
-            <div className="date-container">
-              <div className="time-container"></div>
-            </div>
-          </div>
-            
-        </div>
+          {
+            studentDatabase.map(student => (
+              <HelpRequestBox name={student.name} profileImage={student.profileImage} dateTime={student.dateTime} />
+            ))}
+ 
       </div>
-    </div>
-
-
-
-
-// const dateTime = (new Date()).toDateString();
-
-// const studentDatabase = [
-//   {name: "AIDEN", profileImage: Aiden, dateTime: dateTime },
-//   {name: "RAWIRI", profileImage: Rawiri, dateTime: dateTime },
-//   {name: "NEVEAH", profileImage: Neveah, dateTime: dateTime },
-//   {name: "JAVIER", profileImage: Javier, dateTime: dateTime },
-//   {name: "TOKIO", profileImage: Tokio, dateTime: dateTime}
-// ]
-
-//   const HelpRequest = () => {
-//   return (
-//     <div className="helprequest-mainContainer">
-//       <h3>Help Request</h3>
-
-//       <div className="help-container">
-//         {
-//           studentDatabase.map(student => (
-//             <HelpRequestBox name={student.name} image={student.profileImage} dateTime={student.dateTime} />
-//           ))
-//         }
-        // const HelpRequestBox = ({name, image, dateTime}) => {
-        // <div className="helpRequest-boxContainer">
-        //   <input type="checkbox" />
-        //   <div className="helprequest-secondContainer">
-        //     <img src={profileImage} className="student-img" alt="" />
-        //     <p className="helptext">{name} needs help with his project.</p>
-        //     <div className="date-container">
-        //       <div className="time-container">{dateTime}</div>
-        //     </div>
-        //   </div>
-        // </div>
-        // }
-
-//       </div>
-//     </div>
-//   );
-//   const HelpRequestBox = ({ name, image, dateTime }) => {
-//     return (
-//       <div className="helpRequest-boxContainer">
-
-//       </div>
-//     )
-//   }
+      </div>
+      </div>
 
     );
 }

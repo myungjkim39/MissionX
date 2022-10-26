@@ -2,6 +2,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+h3{
+    font-weight: bold;
+}
 .helprequest-mainContainer{
     background-color: #B2E4FA;
     padding-left: 300px;
@@ -9,6 +12,11 @@ html, body{
     padding-bottom: 60px;
     height: 100vh;
     display: flex;
+}
+.helpRequest-boxContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 .help-container{
     display: flex;
@@ -48,7 +56,19 @@ html, body{
     flex-direction: row;
     justify-content: space-evenly;
     padding-right: 30px;
-    padding-left: 800px;
+    padding-left: 760px;
+}
+.reply-tick, .done-tick{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-bottom: 10px;
+}
+h5{
+    padding-left: 10px;
+}
+.done-tick:hover{
+    background-color: #67aac6;
 }
 
 .student-img{

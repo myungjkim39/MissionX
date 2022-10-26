@@ -11,6 +11,7 @@ import ArrowLeft from "../images/arrowLeft.png";
 import UserProfile from "../images/userprofile.png";
 import Settings from "../images/settings.png";
 import Logout from "../images/Logout.png";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
     const sidebarCollapsed = localStorage.getItem('sidebar-collapsed');
@@ -38,21 +39,25 @@ function Sidebar() {
         </div>
                 
                 <div className="item">
+                    <Link id="link" to={"/teacherdashboard/progresstracker"}>
                     <img src={ProgressTracker} className="sidebar-icon" alt="" />
-                    <span className="sidebar-text">PROGRESS TRACKER</span>
+                        <span className="sidebar-text">PROGRESS TRACKER</span>
+                        </Link>
                 </div>
                 
                 <div className="item">
+                     <Link id="link" to={"/studentprofile"}>
                     <img src={StudentProfiles} className="sidebar-icon" alt="" />
-                    <span className="sidebar-text">STUDENTS PROFILE</span>
+                        <span className="sidebar-text">STUDENTS PROFILE</span>
+                        </Link>
                 </div>
 
 
                 <div className="item">
-                                    {/* <link to="/HelpRequest"> */}
+                    <Link id="link" to={"/teacherdashboard/helprequests"}>
                     <img src={HelpRequest} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">HELP REQUEST</span>
-                {/* </link> */}
+                </Link>
                     </div>
                     
 
@@ -61,9 +66,11 @@ function Sidebar() {
                     <span className="sidebar-text">PROJECT SUBMISSIONS</span>
                 </div>
 
-                 <div className="item">
+                <div className="item">
+                    <Link id="link" to={"/teacherprojectlibrary"}>
                     <img src={ProjectLibrary} className="sidebar-icon" alt="" />
-                    <span className="sidebar-text">PROJECT LIBRARY</span>
+                        <span className="sidebar-text">PROJECT LIBRARY</span>
+                        </Link>
                 </div>
 
             <div className="pinkarrow-min">
@@ -75,9 +82,11 @@ function Sidebar() {
                 
                 <div className="bottom-options">
 
-               <div className="user-profile">
+                    <div className="user-profile">
+                        <Link id="link" to={"/teacherprofile"}>
                     <img src={UserProfile} className="profile-settings" alt="" /> <br></br>
-                  <span className="sidebar-text">Profile</span>
+                            <span className="sidebar-text">Profile</span>
+                            </Link>
                     </div>
                     
                 <div className="user-profile">
@@ -86,8 +95,10 @@ function Sidebar() {
                     </div>
 
                     <div className="user-profile">
+                        <Link id="link" to={"/"}>
                         <img src={Logout} className="profile-settings" alt="" /> <br></br>
-                        <span className="sidebar-text">Log out</span> 
+                            <span className="sidebar-text">Log out</span> 
+                            </Link>
                     </div>
            </div> 
 
