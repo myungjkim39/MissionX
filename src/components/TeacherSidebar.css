@@ -27,13 +27,13 @@ html, body{
     display: flex;
     align-items: flex-end;
     margin-right: 0px;
-    height: 8vh;
+    height: 7vh;
     /* margin-left: auto; */
     transition: 0.2s ease-in-out;
 }
 .sidebar-pinkarrow:hover{
     background-color: #B2E4FA;
-    padding-right: 10px;
+    padding: 10px 10px 10px 5px;
 }
 .pinkarrow-min{
     margin-right: 10px;
@@ -67,7 +67,7 @@ html, body{
 .bottom-options {
     display: flex;
     flex-direction: row;
-    padding-top: 280px;
+    padding-top: 250px;
     justify-content: space-evenly;
 }
 
@@ -98,8 +98,10 @@ html, body{
     height: 30px;
 }
 .Sidebar.collapsed .pinkarrow-min {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    border-radius: 0px 10px 10px 0px;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    transform: rotate(180deg);
     margin-left: 10px;
     margin-right: auto;
     margin-top: 60px;
@@ -115,7 +117,7 @@ html, body{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .Sidebar.collapsed .profile-settings {
     width: 20px;
