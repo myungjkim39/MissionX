@@ -1,4 +1,5 @@
 import React from "react"
+
 import "./home.css";
 import Navbar from '../components/homecomponents/Navbar'
 import Header from "../components/homecomponents/Header";
@@ -14,7 +15,6 @@ function Home() {
   return (
     <div className="Homepage">
       <Navbar />
-      <br/> 
       <Header />
       <br />
       <StudentsCreation> students </StudentsCreation>
@@ -41,3 +41,4 @@ function Home() {
 }
 
 export default Home;
+
