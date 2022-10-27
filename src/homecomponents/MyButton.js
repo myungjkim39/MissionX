@@ -1,7 +1,7 @@
 import "./MyButton.css"
 
 function MyButton(props) {
-    return <><button>{props.buttonName}</button></>;
+    return <><mybutton>{props.buttonName}</mybutton></>;
 }
 
 export default MyButton;
