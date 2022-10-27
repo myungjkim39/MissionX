@@ -1,8 +1,8 @@
-.footer{
+.homeFooter{
     margin:0;
     display: flex;
-    background-color: aliceblue;
+    background-color: rgba(178, 228, 250, 1);
 }
-.courses{
+.homeCourses{
     margin-right: 2rem;
 }

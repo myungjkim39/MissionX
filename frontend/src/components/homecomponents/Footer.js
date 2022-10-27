@@ -3,8 +3,8 @@ import "./Footer.css"
 
 function Footer() {
     return(
-        <div className="footer">
-            <div className="courses">
+        <div className="homeFooter">
+            <div className="homeCourses">
             <h5>COMPANY</h5>
             <br></br>
             <p>About us</p>

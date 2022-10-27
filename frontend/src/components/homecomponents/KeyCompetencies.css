@@ -1,11 +1,9 @@
 .keyCompetencies{
     margin:0;
-    background-color: lightslategrey;
+    background-color: rgba(239, 239, 241, 1);
 }
-h4{
-    margin-top: 4rem;
-    margin-left: 8rem;
-}
+
 .keyComp{
+    margin-top: 4rem;
     margin-left: 8rem;
 }
