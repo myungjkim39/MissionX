@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&family=Open+Sans:wght@700&display=swap');
+
+.profilesInBox{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 40%;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+    color: #6c6c6c;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    background-color:#FFFFFF ;
+    border-radius: 30px;
+
+    height: 182px;
+    width: 20%;
+    border: 2px solid none;
+    box-shadow: 2px 2px 2px rgb(154, 149, 149);
+
+
+}
+
+.profilesInBox img{
+    width: 104px;
+    height: 103px;
+}
+
+.studentProfiles{
+    background-color:#e0f4fd ;
+    border-radius: 30px;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin: 109px 50px 83px  236px;  
+
+    
+ }
+
+ 
+
