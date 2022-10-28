@@ -1,7 +1,24 @@
 import React from 'react'
 
-export default function TeacherDashboardStudentProfiles() {
+
+import Footer from '../Shared components/Footer'
+
+import StudentProfiles from '../components/StudentProfiles'
+
+
+
+
+export default function StudentProfileViewer() {
   return (
-    <div>TeacherDashboardStudentProfiles</div>
+    //calling components
+    
+    <div>
+
+     <StudentProfiles/>
+     <Footer/>
+  
+     
+
+    </div>
   )
 }
