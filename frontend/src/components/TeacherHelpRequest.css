@@ -12,8 +12,8 @@ h3{
     padding-left: 250px;
     padding-top: 50px;
     padding-bottom: 60px;
-    height: calc(92vh - 150px);
-    width: 80%;
+    /* height: calc(92vh - 150px); */
+    width: 96.5%;
     display: flex;
 }
 .helpRequest-boxContainer {
@@ -33,7 +33,7 @@ h3{
     background-color: #cfebf8;
     color: #484646;
     font-family: open Sans;
-    width: 80%;
+    width: 90%;
     height:500px;
     padding-top: 10px;
     padding-left: 70px;

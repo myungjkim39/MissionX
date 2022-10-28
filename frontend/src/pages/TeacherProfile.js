@@ -11,9 +11,9 @@ function TeacherProfileViewer () {
         <div className="teacher-profile-side">
         <div className="teacherprofile-options">
             <img src={Image} width="width: 69px" alt="T Image" /> <br />
-            <button type="button" className="teacher-btn1">EDIT PROFILE</button>
-            <button type="button" className="teacher-btn1">CHANGE PHOTO</button>
-            <button type="button" className="teacher-btn1">SETTINGS</button>
+            <button type="button" className="teacher-profile-btn1">EDIT PROFILE</button>
+            <button type="button" className="teacher-profile-btn1">CHANGE PHOTO</button>
+            <button type="button" className="teacher-profile-btn1">SETTINGS</button>
             </div>
 
             <div className="teacher-info">
@@ -24,10 +24,10 @@ function TeacherProfileViewer () {
         </div>
         <div className="dashboard-projects">
           <Link to="/teacherprojectlibrary">
-            <button type="button" className="back-projects">BACK TO PROJECTS</button>
+            <button type="button" className="teacherprofile-back-projects">BACK TO PROJECTS</button>
           </Link>
           <Link to="/">
-            <button type="button" className="back-dashboard">BACK TO DASHBOARD</button>
+            <button type="button" className="teacherprofile-back-dashboard">BACK TO DASHBOARD</button>
             </Link>
         </div>
         <Footer />

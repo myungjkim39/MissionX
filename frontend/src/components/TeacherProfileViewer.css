@@ -36,8 +36,8 @@
     font-weight: bold;
     color: #707070;
 }
-.teacher-btn1{
-    background-color: white;
+.teacher-profile-btn1{
+    /* background-color: white;
     border-radius: 5px;
     margin-top: 20px;
     border-color: skyblue;
@@ -45,27 +45,32 @@
     color: skyblue;
     width: 135px;
     height: 25px;
-    font-weight: bold;
+    font-weight: bold; */
+    background-color: white;
+    color: skyblue;
+    border-style: solid;
+    border-color: skyblue;
+    width: 220px;
 }
 
 .dashboard-projects{
     margin-bottom: 50px;
 }
-.back-projects{
+.teacherprofile-back-projects{
     margin-left: 700px;
     margin-top: 30px;
     margin-right: 20px;
-    width: 175px;
-    height: 30px;
+    width: 270px;
+    height: 40px;
     background-color: rgb(216, 161, 58);
     border-style: none;
     color: white;
     border-radius: 5px;
     font-weight: bold;
 }
-.back-dashboard{
-    width: 175px;
-    height: 30px;
+.teacherprofile-back-dashboard{
+    width: 270px;
+    height: 40px;
     background-color: #FD349C;
     color: white;
     border-radius: 5px;

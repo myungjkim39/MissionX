@@ -8,7 +8,7 @@ export default function Header() {
         <img
           src="/src-assets/NavBar/LevelUpWorks-white.png"
           alt="Level Up Logo"
-          className="logo"
+          className="teacher-profile-headerlogo"
         />
         </Link>
 
