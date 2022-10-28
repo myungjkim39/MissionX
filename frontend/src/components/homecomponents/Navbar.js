@@ -1,13 +1,17 @@
 import React from "react";
 import MyButton from './MyButton';
-//git import "./Navbar.css"
+import "./Navbar.css"
 
 
 function Navbar() {
     return (
         <div className="navbar">
-            <div className="navlogo"></div>
-            {/* add logo */}
+            <div className="navlogo">
+            <img
+                    src="src-assets/NavBar/LevelUpWorks-white.png"
+                    alt="animation"
+                    />
+            </div>
             <div className= "navList">
                 
                     <MyButton buttonName="Home" />
@@ -19,22 +23,29 @@ function Navbar() {
 
             <div className="navrightContainer">
                 <div className="languageContainer">Lang
-
+                <img
+                    src="src-assets/NavBar/NZFlag.png"
+                    alt="animation"
+                    />
+                    <img
+                    src="src-assets/NavBar/MaoriFlag.png"
+                    alt="animation"
+                    />
                 </div>
+            </div>
 
                 <div className="loginSignupContainer">
-  
+                <img
+                    className="navAvatar"
+                    src="src-assets/NavBar/Avatar-white.png"
+                    alt="animation"
+                    />
                     <button className="navItem navLogin">Register</button>
                         <div className="NavloginSignupDivider"></div>
                     <button className="navItem navSignup">Login</button>
             
                 </div>
             </div>
-                
-           
-        
-        </div>
-        /* flex direction */
     )
 }
 export default Navbar;
