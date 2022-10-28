@@ -32,20 +32,22 @@ function Sidebar() {
     return (
         <div className={isExpanded ? "Sidebar" : "Sidebar collapsed"}>
             
-            <div className="sidebar-items">
+            <div className="helprequest-sidebar-items">
 
-        <div>
-        <img src={JasminaSalvador} className="jasmina" alt="" />
+                <div>
+                    <Link id="link" to={"/teacherprofile"}>
+                        <img src={JasminaSalvador} className="helprequest-jasmina" alt="" />
+                        </Link>
         </div>
                 
-                <div className="item">
+                <div className="teacher-sidebar-item">
                     <Link id="link" to={"/teacherdashboard/progresstracker"}>
                     <img src={ProgressTracker} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROGRESS TRACKER</span>
                         </Link>
                 </div>
                 
-                <div className="item">
+                <div className="teacher-sidebar-item">
                      <Link id="link" to={"/studentprofile"}>
                     <img src={StudentProfiles} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">STUDENTS PROFILE</span>
@@ -53,7 +55,7 @@ function Sidebar() {
                 </div>
 
 
-                <div className="item">
+                <div className="teacher-sidebar-item">
                     <Link id="link" to={"/teacherdashboard/helprequests"}>
                     <img src={HelpRequest} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">HELP REQUEST</span>
@@ -61,12 +63,12 @@ function Sidebar() {
                     </div>
                     
 
-             <div className="item">
+             <div className="teacher-sidebar-item">
                     <img src={ProjectSubmissions} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">PROJECT SUBMISSIONS</span>
                 </div>
 
-                <div className="item">
+                <div className="teacher-sidebar-item">
                     <Link id="link" to={"/teacherprojectlibrary"}>
                     <img src={ProjectLibrary} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROJECT LIBRARY</span>

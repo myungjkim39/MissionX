@@ -1,4 +1,4 @@
-import './HelpRequest.css';
+import './TeacherHelpRequest.css';
 import React, { useState }  from 'react'
 import Aiden from '../images/AidenAndrews.png'
 import Rawiri from '../images/RawiriFletcher.png'
