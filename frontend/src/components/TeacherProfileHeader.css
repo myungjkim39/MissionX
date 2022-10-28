@@ -1,0 +1,40 @@
+
+.teacher-profile-header{
+    background-color: #43C0F6;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navbar-options{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+.teacher-profile-home:hover{
+    cursor: pointer;
+}
+.teacher-profile-home, .teacher-profile-projects, .teacher-profile-teachers{
+    margin-right: 30px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+  .flagsimage1 {
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+  
+  .nzflag {
+    height: 12px;
+    margin-inline: 5px;
+  }
+  
+  .maoriflag {
+    width: 22px;
+    height: 12px;
+  }
+  

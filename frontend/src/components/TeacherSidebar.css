@@ -19,7 +19,7 @@ html, body{
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 100%;
+    height: calc(92vh - 40px);
     background-color: #43C0F6;
     color: white;
 }
@@ -29,7 +29,6 @@ html, body{
     align-items: flex-end;
     margin-right: 0px;
     height: 7vh;
-    /* margin-left: auto; */
     transition: 0.2s ease-in-out;
 }
 .sidebar-pinkarrow:hover{
@@ -68,7 +67,7 @@ html, body{
 .bottom-options {
     display: flex;
     flex-direction: row;
-    padding-top: 250px;
+    padding-top: 170px;
     justify-content: space-evenly;
 }
 
@@ -90,7 +89,7 @@ html, body{
 }
 
 .Sidebar.collapsed {
-    width: 92px; 
+    width: 90px; 
 }
 
 .Sidebar.collapsed .sidebar-icon {
@@ -105,7 +104,7 @@ html, body{
     transform: rotate(180deg);
     margin-left: 10px;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .Sidebar.collapsed .sidebar-text {
@@ -118,7 +117,7 @@ html, body{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .Sidebar.collapsed .profile-settings {
     width: 20px;

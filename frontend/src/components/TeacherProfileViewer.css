@@ -4,7 +4,7 @@
     background-color: #EEEEEE;
 }
 .teacher-profile-side{
-    margin-top: 100px;
+    margin-top: 60px;
     display: inline-flex;
 }
 .teacherprofile-options {
@@ -47,6 +47,10 @@
     height: 25px;
     font-weight: bold;
 }
+
+.dashboard-projects{
+    margin-bottom: 50px;
+}
 .back-projects{
     margin-left: 700px;
     margin-top: 30px;
@@ -67,4 +71,9 @@
     border-radius: 5px;
     font-weight: bold;
     border-style: none;
+}
+.back-dashboard:hover,
+.back-projects:hover
+{
+    cursor: pointer;
 }
