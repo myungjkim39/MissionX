@@ -34,8 +34,10 @@ function Sidebar() {
             
             <div className="sidebar-items">
 
-        <div>
-        <img src={JasminaSalvador} className="jasmina" alt="" />
+                <div>
+                    <Link id="link" to={"/teacherprofile"}>
+                        <img src={JasminaSalvador} className="jasmina" alt="" />
+                        </Link>
         </div>
                 
                 <div className="item">

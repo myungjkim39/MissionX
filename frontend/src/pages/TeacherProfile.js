@@ -1,11 +1,13 @@
 import React from 'react'
-
 import '../components/TeacherProfileViewer.css'
 import { Link } from 'react-router-dom';
+import Footer from '../Shared components/Footer.js';
+import Header from '../components/TeacherProfileHeader';
 
 function TeacherProfileViewer () {
-    return (
-      <div className="teacher-profile">
+  return (
+    <div className="teacher-profile">
+      <Header />
         <div className="teacher-profile-side">
         <div className="teacherprofile-options">
             <img src={Image} width="width: 69px" alt="T Image" /> <br />
@@ -28,6 +30,7 @@ function TeacherProfileViewer () {
             <button type="button" className="back-dashboard">BACK TO DASHBOARD</button>
             </Link>
         </div>
+        <Footer />
       </div>
     )
   }

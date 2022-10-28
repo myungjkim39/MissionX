@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../components/TeacherSidebar.js';
 import TeacherNavbar from '../components/TeacherDashboardHeader.js';
 import HelpRequest from '../components/TeacherHelpRequest.js';
+import TeacherProfileViewer from '../components/TeacherProfileViewer.js';
 import Footer from '../Shared components/Footer';
 
 export default function TeacherHelpRequest() {
@@ -22,6 +23,10 @@ export default function TeacherHelpRequest() {
                   {/* </div> */}
               
               <Footer/>
+        
+                      {/* <div className="Teacher-Profile">
+                  <TeacherProfileViewer />
+              </div> */}
 
           </div>
 
