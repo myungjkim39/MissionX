@@ -7,7 +7,7 @@ import PrBackground from '../components/PrBackground'
 
 
 
-export default function ProgressTracker() {
+export default function TeacherDashboardProgressTracker() {
   return (
     //calling components
     
