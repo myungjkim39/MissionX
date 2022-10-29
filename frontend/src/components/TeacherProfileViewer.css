@@ -4,7 +4,7 @@
     background-color: #EEEEEE;
 }
 .teacher-profile-side{
-    margin-top: 100px;
+    margin-top: 60px;
     display: inline-flex;
 }
 .teacherprofile-options {
@@ -19,7 +19,7 @@
     top: 204px;
     left: 343px;
     width: 261px;
-    height: 312px;
+    height: 380px;
     border: 2px solid #E2DFDF;
     border-radius: 30px;
 }
@@ -36,8 +36,8 @@
     font-weight: bold;
     color: #707070;
 }
-.teacher-btn1{
-    background-color: white;
+.teacher-profile-btn1{
+    /* background-color: white;
     border-radius: 5px;
     margin-top: 20px;
     border-color: skyblue;
@@ -45,26 +45,71 @@
     color: skyblue;
     width: 135px;
     height: 25px;
-    font-weight: bold;
+    font-weight: bold; */
+
+    background-color: white;
+    color: skyblue;
+    border-style: solid;
+    border-color: skyblue;
+    width: 220px;
 }
-.back-projects{
+
+.dashboard-projects{
+    margin-bottom: 50px;
+}
+.teacherprofile-back-projects{
     margin-left: 700px;
     margin-top: 30px;
     margin-right: 20px;
-    width: 175px;
-    height: 30px;
+    width: 270px;
+    height: 40px;
     background-color: rgb(216, 161, 58);
     border-style: none;
     color: white;
     border-radius: 5px;
     font-weight: bold;
 }
-.back-dashboard{
-    width: 175px;
-    height: 30px;
+.teacherprofile-back-dashboard{
+    width: 270px;
+    height: 40px;
     background-color: #FD349C;
     color: white;
     border-radius: 5px;
     font-weight: bold;
     border-style: none;
+}
+.back-dashboard:hover,
+.back-projects:hover
+{
+    cursor: pointer;
+}
+
+h3{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #A5A5A5;
+    margin-right: 130px;
+}
+h4, p{
+    margin-bottom: 30px;
+}
+
+.teacherprofileinfo-mainschool{
+    display: flex;
+    flex-direction: row;
+}
+.teacherprofileinfo-school{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-left: 0px;
+}
+.teacherprofileinfo-school2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

@@ -3,11 +3,11 @@
 import React from 'react'
 import './PartOne.css'
 import StudentReco from './StudentReco'
-import ExportIcon from '../ImagesProgressTracker/ExportIcon.jpg'
+import ExportIcon from './ImagesProgressTracker/ExportIcon.jpg'
 
 
 export default function PartOne(props) {
-  const LetsExport="Export as spreadsheet"//dynamic components 1 //canot use ob and boolean values
+  const LetsExport="Export as spreadsheet"//dynamic components 1 //cannot use ob and boolean values
   return (
   <div className='progressTrackerAll'>
     <div className='progressTrackerLightBackground'>

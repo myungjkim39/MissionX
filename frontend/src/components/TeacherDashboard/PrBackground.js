@@ -1,6 +1,6 @@
 import React from 'react'
 import './PrBackground.css'
-import   BigBox from '../ImagesProgressTracker/BigBox.jpg'
+import   BigBox from './ImagesProgressTracker/BigBox.jpg'
 
 export default function PrBackground() {
   return (

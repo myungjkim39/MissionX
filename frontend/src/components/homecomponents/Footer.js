@@ -3,16 +3,16 @@ import "./Footer.css"
 
 function Footer() {
     return(
-        <div className="footer">
-            <div className="courses">
-            <h5>COMPANY</h5>
+        <div className="homeFooter">
+            <div className="homeCourses">
+            <p>COMPANY</p>
             <br></br>
             <p>About us</p>
             <p>Careers</p>
             <p>Partners</p>
             </div>
-            <div className="courses">
-            <h5>COURSES</h5>
+            <div className="homeCourses">
+            <p>COURSES</p>
             <br></br>
                 <p>Register</p>
                 <p>Login</p>
@@ -21,19 +21,29 @@ function Footer() {
                 <p>Parents</p>
                 <p>Resources</p>
                 </div>
-            <div className="courses">
-            <h5>SUPPORT</h5>
+            <div className="homeCourses">
+            <p>SUPPORT</p>
             <br></br>
-            <p></p>
+            <p>FAQ's</p>
+            <p>Helpdesk</p>
+            <p>Contact Us</p>
             </div>
-            <div className="courses">
-            <h5>LEGAL</h5>
+            <div className="homeCourses">
+            <p>LEGAL</p>
             <br></br>
-            <p></p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
             </div>
-            <div className="courses">
-            <h5>LevelUp Works</h5>
-            <p></p>
+            <div className="homeCourses">
+            <p>LevelUp Works</p>
+            <br></br>
+            <p>LevelUp Works is an Auckland based enterprise dedicated to developing groung based learning software
+                to help teachers response ti he newzealand Digital Technologies & hangarau Matihiko.
+                <br></br><br></br>
+                alan@levelupworks.com
+                <br></br><br></br>
+                (021) 668 185
+            </p>
             </div>
         </div>
     );

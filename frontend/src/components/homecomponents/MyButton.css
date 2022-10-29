@@ -1,6 +1,6 @@
 button {
     padding: 10px;
-    background-color: rgb(137, 185, 240);
+    background-color: rgba(67, 192, 246, 1);
     color: whitesmoke;
     font-weight: bold;
     font-size: medium;
@@ -10,10 +10,12 @@ button {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
 
 }
 button:hover{
-    background-color:  rgb(137, 185, 240);;
+    background-color:  rgba(67, 192, 246, 1);
     color: grey;
     
 }

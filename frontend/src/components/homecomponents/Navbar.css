@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  background-color: rgb(137, 185, 240);
+  background-color: rgba(67, 192, 246, 1);
   height: 60px;
 }
 .navlogo {
@@ -8,7 +8,7 @@
 }
 
 .navList {
-  background: rgb(137, 185, 240);
+  background: rgba(67, 192, 246, 1);
   margin: 0;
   margin-left: 4rem;
   display: flex;
@@ -20,7 +20,7 @@
 }
 .navItem a {
   color: white;
-  background-color: rgb(137, 185, 240);
+  background-color: rgba(67, 192, 246, 1);
   text-transform: uppercase;
 }
 
@@ -33,6 +33,7 @@
   display: flex;
   margin-left: auto;
   margin-right: 20px;
+  flex-direction: column;
 }
 
 .languageContainer {
@@ -44,9 +45,11 @@
   display: flex;
   margin-left: auto;
   margin-right: 20px;
-  align-items: flex-end;
+
+ 
 }
 .navLogin {
+  display: flex;
   margin-left: auto;
   margin-right: 0px;
   padding: 5px;

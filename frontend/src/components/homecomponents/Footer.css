@@ -1,8 +1,14 @@
-.footer{
+.homeFooter{
     margin:0;
     display: flex;
-    background-color: aliceblue;
+    height: 20rem;
+    background-color: rgba(178, 228, 250, 1);
 }
-.courses{
+.homeCourses{
+    margin-right: 2rem;
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+.homeSupport{
     margin-right: 2rem;
 }

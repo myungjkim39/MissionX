@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    opacity: 1.0;
+}
+
+.loginpage{
+    background-color: white;
+    display: flex;
+    margin-right: 280px;
+    margin-left: 280px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 2px solid;
+}
+.loginStudents{
+    display: flex;
+    text-align: center;
+    margin: 0 0 0 0px;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.loginTeachers{
+    display: flex;
+    text-align: center;
+    margin: 0 0 0 0;
+    border-left: 2px solid;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.loginImage{
+    height: 300px;
+    width: 300px;
+    align-self: center;
+}
+.loginheading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.loginbuttons{
+    background-color: white;
+    color: grey;
+    padding: 5px;
+}
+.loginbuttons:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid rgba(67, 192, 246, 1);
+    border-radius: 0px;
+}
+input {
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    input[type='text'],
+    input[type='email'] {
+        border-radius: 8px;
+        border-bottom: 2px solid #A29F9F;
+        border-left: 2px solid #A29F9F;
+        border-right: 2px solid #A29F9F;
+        border-top: 2px solid #A29F9F;
+        padding: 5px 5px;
+        align-items: center;
+        background-color: white;
+    }
+    .buttonplaceholder{
+        margin-left: 20px;
+    }
+
+    .loginbutton{
+        background-color: #F91C85;
+        padding-left: 60px;
+        padding-right: 60px
+    }
