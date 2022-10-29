@@ -22,7 +22,6 @@ export default function TeacherDashboardProgressTracker() {
      <TeacherSidebar/>
 
      <Header />
-
      <PartOne/>
      <Footer/>
   

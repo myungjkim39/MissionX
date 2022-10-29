@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from './StudentDashboardSidebar';
+import Sidebar from "./StudentDashboardSidebar";
 import "./StudentDashboardScratchBlock.css";
 
 export default function ScratchBlock() {
@@ -8,8 +8,8 @@ export default function ScratchBlock() {
       <Sidebar />
       <div id="contentbox">
         <div id="innerbox">
-          <div className="content">
-            <h1>Explore Scratch blocks</h1>
+          <div className= "content">
+            <h1>explore Scratch blocks</h1>
             <p2>
               Learn the basic function of some basic scratch blocks such as
               “say,” “wait,” “go to” and “hide.”
