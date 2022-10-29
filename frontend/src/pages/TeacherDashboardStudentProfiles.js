@@ -11,6 +11,8 @@ import TeacherSidebar from '../TeacherSidebar'
 
 
 
+
+
 export default function TeacherDashboardStudentProfiles() {
   return (
     //calling components
