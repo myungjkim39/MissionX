@@ -1,81 +1,7 @@
-// import React, { useState } from "react";
-
-// export default function Login() {
-
-//   const [email, setEmail] = useState("");
-
-//   const [password, setPassword] = useState("");
-
-//   function validateForm() {
-
-//     return email.length > 0 && password.length > 0;
-
-//   }
-
-//   function handleSubmit(event) {
-
-//     event.preventDefault();
-
-//   }
-
-//   return (
-
-//     <div className="Login">
-
-//       <Form onSubmit={handleSubmit}>
-
-//         <Form.Group size="lg" controlId="email">
-
-//           <Form.Label>Email</Form.Label>
-
-//           <Form.Control
-
-//             autoFocus
-
-//             type="email"
-
-//             value={email}
-
-//             onChange={(e) => setEmail(e.target.value)}
-
-//           />
-
-//         </Form.Group>
-
-//         <Form.Group size="lg" controlId="password">
-
-//           <Form.Label>Password</Form.Label>
-
-//           <Form.Control
-
-//             type="password"
-
-//             value={password}
-
-//             onChange={(e) => setPassword(e.target.value)}
-
-//           />
-
-//         </Form.Group>
-
-//         <Button block size="lg" type="submit" disabled={!validateForm()}>
-
-//           Login
-
-//         </Button>
-
-//       </Form>
-
-//     </div>
-
-//   );
-
-// }
-
 import React from "react";
-import "./LoginScreen.css";
+import "./SignupScreen.css";
 
-function LoginsScreen() {
+function SignupScreen() {
   return (
     <div className="loginpage">
       <div className="loginStudents">
@@ -93,6 +19,14 @@ function LoginsScreen() {
         </div>
           <form action="mailto:surbhig@missionreadyhq.com" method="POST">
           <div>
+          <input
+              type="text"
+              name="fullName"
+              id="studentID"
+              placeholder="Full Name"
+              required
+            />
+            <br></br>
             <input
               type="email"
               name="email"
@@ -108,7 +42,16 @@ function LoginsScreen() {
               placeholder="Password"
               required
             />
+            <br></br>
+             <input
+              type="text"
+              name="myName"
+              id="myName"
+              placeholder="Confirm Password"
+              required
+            />
             </div>
+            <br></br>
             <div className="buttonplaceholder">
             <button className="loginbutton">Login</button>
             </div>
@@ -132,6 +75,14 @@ function LoginsScreen() {
           <form action="mailto:surbhig@missionreadyhq.com" method="POST">
           <div>
           <input
+              type="text"
+              name="fullName"
+              id="studentID"
+              placeholder="Full Name"
+              required
+            />
+            <br></br>
+            <input
               type="email"
               name="email"
               id="email"
@@ -146,7 +97,16 @@ function LoginsScreen() {
               placeholder="Password"
               required
             />
+            <br></br>
+             <input
+              type="text"
+              name="myName"
+              id="myName"
+              placeholder="Confirm Password"
+              required
+            />
             </div>
+            <br></br>
             <div className="buttonplaceholder">
             <button className="loginbutton">Login</button>
             </div>
@@ -156,4 +116,4 @@ function LoginsScreen() {
     </div>
   );
 }
-export default LoginsScreen;
+export default SignupScreen;

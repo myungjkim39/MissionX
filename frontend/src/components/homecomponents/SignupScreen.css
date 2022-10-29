@@ -1,14 +1,4 @@
-body{
-    margin: 0px;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: grey;
-    opacity: 1.0;
-}
-
 .loginpage{
-    background-color: white;
     display: flex;
     margin-right: 280px;
     margin-left: 280px;
@@ -48,6 +38,7 @@ body{
     background-color: white;
     color: grey;
     padding: 5px;
+    margin-bottom: 20px;
 }
 .loginbuttons:hover {
     background-color: white;
@@ -68,6 +59,7 @@ input {
         border-right: 2px solid #A29F9F;
         border-top: 2px solid #A29F9F;
         padding: 5px 5px;
+        margin-bottom: 10px;
         align-items: center;
         background-color: white;
     }
