@@ -6,16 +6,16 @@ import Header from '../components/TeacherProfileHeader';
 import And from '../images/AidenAndrews.png';
 
 function TeacherProfileViewer() {
-  const [teacher, setTeacher] = useState()
+  const [teacher, setTeacher] = useState({ profile_pic:'TeacherPic', name:'name', email:'email@.com', school:'school', date_of_birth:'0000-00-00', contact_number:'000000'})
   useEffect(() => {
-    fetch('http://localhost:4000/mockteacher_id').then(res => res.json()).then(json => setTeacher(json)).catch(err => console.log(err))
+    fetch('http://localhost:4000/teacher').then(res => res.json()).then(json => setTeacher(json[0])).catch(err => console.log(err))
   }, [])
   return (
     <div className="teacher-profile">
-      <Header />
+      <Header teacherName={teacher.name} />
         <div className="teacher-profile-side">
         <div className="teacherprofile-options">
-          <img src= {teacher.profilePic} width="width: 59px" alt="T Image" /> <br />
+          <img src= {teacher.profile_pic} width="width: 59px" alt="T Image" /> <br />
             <button type="button" className="teacher-profile-btn1">EDIT PROFILE</button>
             <button type="button" className="teacher-profile-btn1">CHANGE PHOTO</button>
             <button type="button" className="teacher-profile-btn1">SETTINGS</button>
@@ -23,7 +23,7 @@ function TeacherProfileViewer() {
 
         <div className="teacher-info">
           
-          {teacher && (<>
+          {/* {teacher && (<> */}
             
             <h3>{teacher.name}</h3>
             
@@ -37,12 +37,12 @@ function TeacherProfileViewer() {
 
             <div className="teacherprofileinfo-school2">
               <p>{teacher.school}</p>
-                <p>{teacher.dateOfBirth}</p>
-                <p>{teacher.contactNumber}</p>
+                <p>{teacher.date_of_birth}</p>
+                <p>{teacher.contact_number}</p>
                  <p>{teacher.email}</p>
               </div>
               </div>
-          </>)}
+          {/* </>)} */}
 
           </div>
         </div>
