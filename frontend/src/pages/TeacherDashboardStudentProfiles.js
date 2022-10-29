@@ -1,31 +1,22 @@
-import React from 'react'
+import React from "react";
 
+import Footer from "../Shared components/Footer";
 
-import Footer from '../Shared components/Footer'
+import StudentProfiles from "../components/TeacherDashboard/StudentProfiles";
 
-import StudentProfiles from '../components/TeacherDashboard/StudentProfiles'
-
-import TeacherDashboardHeader from "../components/TeacherDashboardHeader"
-import TeacherSidebar from '../TeacherSidebar'
-
-
-
-
-
+import TeacherDashboardHeader from "../components/TeacherDashboardHeader";
+import TeacherSidebar from "../components/TeacherSidebar";
 
 export default function TeacherDashboardStudentProfiles() {
   return (
     //calling components
-    
+
     <div>
-       <TeacherDashboardHeader />
-       <TeacherSidebar/>
+      <TeacherDashboardHeader />
+      <TeacherSidebar />
 
-     <StudentProfiles/>
-     <Footer/>
-  
-     
-
+      <StudentProfiles />
+      <Footer />
     </div>
-  )
+  );
 }

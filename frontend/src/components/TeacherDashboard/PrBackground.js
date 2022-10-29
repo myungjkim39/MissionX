@@ -1,11 +1,10 @@
-import React from 'react'
-import './PrBackground.css'
-import   BigBox from './ImagesProgressTracker/BigBox.jpg'
+import React from "react";
+import "./PrBackground.css";
 
 export default function PrBackground() {
   return (
-    <div className='Prbackground'>
-      <img src={BigBox} alt='BigBox' className='Bigboximage'/>
-      </div>
-  )
+    <div className="Prbackground">
+      <img src="./ImagesProgressTracker/BigBox.jpg" alt="BigBox" className="Bigboximage" />
+    </div>
+  );
 }
