@@ -3,7 +3,7 @@
 import React from 'react'
 import './PartOne.css'
 import StudentReco from './StudentReco'
-import ExportIcon from '../ImagesProgressTracker/ExportIcon.jpg'
+import ExportIcon from './ImagesProgressTracker/ExportIcon.jpg'
 
 
 export default function PartOne(props) {

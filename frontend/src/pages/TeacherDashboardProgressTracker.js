@@ -5,7 +5,7 @@ import Footer from '../Shared components/Footer'
 import PrBackground from '../components/TeacherDashboard/PrBackground'
 
 import TeacherDashboardHeader from "../components/TeacherDashboardHeader"
-import TeacherSidebar from '../TeacherSidebar'
+import TeacherSidebar from '../components/TeacherSidebar'
 
 
 
