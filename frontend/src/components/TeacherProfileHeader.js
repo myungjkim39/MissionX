@@ -1,7 +1,7 @@
 import "./TeacherProfileHeader.css";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="teacher-profile-header">
       <Link to="/">
@@ -30,6 +30,7 @@ export default function Header() {
           />
 
       </div>
+      <div>{props.teacherName}</div>
     </div>
   );
 }
