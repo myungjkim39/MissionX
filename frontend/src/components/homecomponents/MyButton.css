@@ -10,6 +10,8 @@ button {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
 
 }
 button:hover{
