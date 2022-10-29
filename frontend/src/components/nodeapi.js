@@ -22,7 +22,5 @@ app.get('/teacher_id', (req, res) => {
 });
 });
 
-
-
 app.listen(4001)
 
