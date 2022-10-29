@@ -3,12 +3,12 @@ import React from 'react'
 
 import Footer from '../Shared components/Footer'
 
-import StudentProfiles from '../components/StudentProfiles'
+import StudentProfiles from '../components/TeacherDashboard/StudentProfiles'
 
 
 
 
-export default function StudentProfileViewer() {
+export default function TeacherDashboardStudentProfiles() {
   return (
     //calling components
     
