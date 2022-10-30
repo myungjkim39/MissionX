@@ -40,14 +40,14 @@ function Sidebar() {
                         </Link>
         </div>
                 
-                <div className="teacher-sidebar-item">
+                <div className="teacherdash-sidebar-item">
                     <Link id="link" to={"/teacherdashboard/progresstracker"}>
                     <img src={ProgressTracker} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROGRESS TRACKER</span>
                         </Link>
                 </div>
                 
-                <div className="teacher-sidebar-item">
+                <div className="teacherdash-sidebar-item">
                      <Link id="link" to={"/studentprofile"}>
                     <img src={StudentProfiles} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">STUDENTS PROFILE</span>
@@ -55,7 +55,7 @@ function Sidebar() {
                 </div>
 
 
-                <div className="teacher-sidebar-item">
+                <div className="teacherdash-sidebar-item">
                     <Link id="link" to={"/teacherdashboard/helprequests"}>
                     <img src={HelpRequest} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">HELP REQUEST</span>
@@ -63,12 +63,12 @@ function Sidebar() {
                     </div>
                     
 
-             <div className="teacher-sidebar-item">
+             <div className="teacherdash-sidebar-item">
                     <img src={ProjectSubmissions} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">PROJECT SUBMISSIONS</span>
                 </div>
 
-                <div className="teacher-sidebar-item">
+                <div className="teacherdash-sidebar-item">
                     <Link id="link" to={"/teacherprojectlibrary"}>
                     <img src={ProjectLibrary} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROJECT LIBRARY</span>

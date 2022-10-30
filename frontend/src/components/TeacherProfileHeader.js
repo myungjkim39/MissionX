@@ -20,17 +20,20 @@ export default function Header(props) {
         <button className="teacher-profile-teachers">TEACHERS</button>
                 </div>
 
-      <div className="flagsimage1">
-          <img src="/src-assets/NavBar/NZflag.png" alt="nzFlag" className="nzflag" />
+      <div className="teacherprofile-flagsimage">
+        <img src="/src-assets/NavBar/NZflag.png"
+          alt="nzFlag"
+          className="nzflag10" />
 
           <img
             src="/src-assets/NavBar/Maoriflag.png"
             alt="Maoriflag"
-            className="maoriflag"
-          />
+            className="maoriflag10"
+        />
+              <div className="teacherprofile-header-name">{props.teacherName}</div>
 
       </div>
-      <div>{props.teacherName}</div>
+
     </div>
   );
 }

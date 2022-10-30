@@ -8,10 +8,10 @@ html, body{
     color: white;
 }
 .helprequest-jasmina {
-    /* padding-top: 30px;
-    padding-left: 70px;
-    padding-bottom: 40px; */
-    width: 69px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    width: 79px;
 }
 .Sidebar {
     position: fixed;
@@ -58,7 +58,7 @@ html, body{
     font-family: "Open Sans";
 }
 
-.teacher-sidebar-item {
+.teacherdash-sidebar-item {
     display: flex;
     align-items: center;
     padding: 5px 5px;
@@ -74,9 +74,10 @@ html, body{
 .profile-settings {
     width: 13px;
     height: 13px;
+    margin-left: 10px;
 }
 
-.teacher-sidebar-item:hover {
+.teacherdash-sidebar-item:hover {
     background-color: #B2E4FA;
     color: #707070;
 }
@@ -94,7 +95,7 @@ html, body{
 
 .Sidebar.collapsed .sidebar-icon {
     padding-left: 20px;
-    width: 30px;
+    width: 50px;
     height: 30px;
 }
 .Sidebar.collapsed .pinkarrow-min {
@@ -111,7 +112,8 @@ html, body{
     display: none;
 }
 .Sidebar.collapsed .helprequest-jasmina {
-    padding-left: 8px;
+    margin-top: 10px;
+    margin-left: 6px;
 }
 .Sidebar.collapsed .bottom-options{
     display: flex;
