@@ -1,19 +1,20 @@
-.header {
+.student-header {
     display: flex;
     flex-direction: row;
     align-content: center;
   }
   
-  .left,
-  .right {
+  .student-left,
+  .student-right {
     display: flex;
   }
   
-  .left {
+  .student-left {
     column-gap: 5vw;
+    flex-direction: row;
   }
   
-  .logo {
+  .student-logo {
     height: 8vh;
     width: 10vw;
     margin-left: 2vw; 
@@ -41,7 +42,7 @@
     color: #6C6C6C;
   }
   
-  .center {
+  .student-center {
     display:flex;
     flex-direction: row;
     column-gap: 10px;
@@ -51,7 +52,7 @@
   }
   
   
-  .circle {
+  .student-circle {
     color: #6C6C6C;
     background-color: #FDF7C0;
     width: 3.5vh;
@@ -67,7 +68,7 @@
     font-style: nunito, black, bold;
   }
   
-  .mini-circle {
+  .student-mini-circle {
     color: #ffff;
     width: 1vh;
     height: 1vh;
@@ -77,18 +78,18 @@
     border-style: solid;
   }
   
-  .center {
+  .student-center {
     display:flex;
     
   }
   
-  .right {
+  .student-right {
     gap: 1vw;
     align-items: center;
-    margin-left: 16vw;
+    margin-left: 10vw;
   }
   
-  .screen-btn {
+  .student-screen-btn {
     width: 200px;
     height: 35px;
     padding: 5px;
@@ -103,7 +104,7 @@
     border-radius: 10px;
   }
   
-  .help-btn {
+  .student-help-btn {
     width: 200px;
     height: 35px;
     background-color: red;
@@ -118,7 +119,7 @@
     border-radius: 10px;
   }
   
-  .projects-btn {
+  .student-projects-btn {
     width: 200px;
     height: 35px;
     background-color: #43c0f6;
@@ -133,17 +134,17 @@
     border-radius: 10px;
   }
   
-  .flagimages {
-    margin-bottom: 50px;
+  .flag-images {
+    margin-top: 1vh;
   }
   
-  .nzflag {
+  .student-nz-flag {
     height: 12px;
     opacity: 1;
     margin-inline: 5px;
   }
   
-  .maoriflag {
+  .student-maori-flag {
     width: 22px;
     height: 12px;
   }

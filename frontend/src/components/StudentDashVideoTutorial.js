@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./StudentDashboardSidebar";
+import StudentSidebar from "./StudentDashboardSidebar";
 import "./StudentDashboardScratchBlock.css";
 import { useState, useEffect } from "react";
 
@@ -20,10 +20,10 @@ export default function VideoTutorial() {
   useEffect(() => getVideoLink());
 
   return (
-    <div className="outerbox">
-      <Sidebar />
-      <div id="contentbox">
-        <div id="innerbox">
+    <div className="outer-box">
+      <StudentSidebar />
+      <div className="content-box">
+        <div className="inner-box">
           <div className="content">
             <div className="blocks">
               <div className="left-box">
@@ -34,11 +34,12 @@ export default function VideoTutorial() {
               </div>
               <iframe
                 src={videoLink}
-                width="640"
-                height="400"
+                width="1000"
+                height="550"
                 frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowfullscreen
+                className="student-video"
               ></iframe>
               <p>
                 <a href="https://vimeo.com/65583694"></a>
