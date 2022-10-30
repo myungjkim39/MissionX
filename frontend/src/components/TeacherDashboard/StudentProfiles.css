@@ -7,6 +7,7 @@
     margin: 15px;
     width: 40%;
     justify-content: space-evenly;
+   
     gap: 5px;
     align-items: center;
     color: #6c6c6c;
@@ -15,8 +16,8 @@
     background-color:#FFFFFF ;
     border-radius: 30px;
 
-    height: 182px;
-    width: 20%;
+    height: 150px;
+    width: 150px;
     border: 2px solid none;
     box-shadow: 2px 2px 2px rgb(154, 149, 149);
 
@@ -34,17 +35,19 @@
     width: 1200px;
     height: 600px;
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
+    flex-wrap: wrap;
+    justify-content:center;
+    column-gap: 2vw;
+    row-gap: 2vh;
     margin: 109px 50px 83px  236px;  
+
 
     
  }
 
- .body{
+ body{
     background-color: #B2E4FA;
  }
-
 
  
 
