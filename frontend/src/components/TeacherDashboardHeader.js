@@ -11,12 +11,14 @@ export default function Header() {
         />
 
       <div className="teacher-dashheader-right">
-        <button className="teacher-dashheader-takescreenshot"> Take Screenshot </button>
-        <button className="teacher-dashheader-help-centre"> Help Centre </button>
-        <button className="teacher-dashheader-more-projects"> More Projects </button>
+        <button className="teacher-dashheader1-takescreenshot"> Take Screenshot </button>
+        <button className="teacher-dashheader1-help-centre"> Help Centre </button>
+        <button className="teacher-dashheader1-more-projects"> More Projects </button>
 
         <div className="teacher-dashheader-flagsimage">
-          <img src="/src-assets/NavBar/NZflag.png" alt="nzFlag" className="teacher-dashheader-nzflag" />
+          <img src="/src-assets/NavBar/NZflag.png"
+            alt="nzFlag"
+            className="teacher-dashheader-nzflag" />
 
           <img
             src="/src-assets/NavBar/Maoriflag.png"

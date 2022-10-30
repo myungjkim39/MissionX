@@ -84,16 +84,16 @@
     cursor: pointer;
 }
 
-h3{
+.teacherprofileinfo-name{
     font-size: 35px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
-h4{
+.teacherprofileinfo-title{
     color: #A5A5A5;
     margin-right: 130px;
 }
-h4, p{
+.teacherprofileinfo-title, .teacherprofileinfo-details{
     margin-bottom: 30px;
 }
 

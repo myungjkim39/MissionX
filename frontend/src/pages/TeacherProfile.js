@@ -3,10 +3,9 @@ import '../components/TeacherProfileViewer.css'
 import { Link } from 'react-router-dom';
 import Footer from '../components/homecomponents/Footer.js';
 import Header from '../components/TeacherProfileHeader';
-import And from '../images/AidenAndrews.png';
 
 function TeacherProfileViewer() {
-  const [teacher, setTeacher] = useState({ profile_pic:'TeacherPic', name:'name', email:'email@.com', school:'school', date_of_birth:'0000-00-00', contact_number:'000000'})
+  const [teacher, setTeacher] = useState({ profile_pic:'TeacherPic', name:'name', email:'email@email.com', school:'school', date_of_birth:'0000-00-00', contact_number:'000000'})
   useEffect(() => {
     fetch('http://localhost:4000/teacher').then(res => res.json()).then(json => setTeacher(json[0])).catch(err => console.log(err))
   }, [])
@@ -25,21 +24,21 @@ function TeacherProfileViewer() {
           
           {/* {teacher && (<> */}
             
-            <h3>{teacher.name}</h3>
+           <div className="teacherprofileinfo-name"> <h3>{teacher.name}</h3> </div>
             
             <div className="teacherprofileinfo-mainschool">
             <div className="teacherprofileinfo-school">
-              <h4>School</h4>
-              <h4>Date of Birth</h4> 
-                <h4>Contact No</h4> 
-                 <h4>Email Address</h4> 
+             <div className="teacherprofileinfo-title"> <h4>School</h4> </div> 
+             <div className="teacherprofileinfo-title"> <h4>Date of Birth</h4> </div>
+               <div className="teacherprofileinfo-title"> <h4>Contact No</h4> </div>
+                <div className="teacherprofileinfo-title"> <h4>Email Address</h4> </div>
               </div>
 
             <div className="teacherprofileinfo-school2">
-              <p>{teacher.school}</p>
-                <p>{teacher.date_of_birth}</p>
-                <p>{teacher.contact_number}</p>
-                 <p>{teacher.email}</p>
+             <div className="teacherprofileinfo-details"> <p>{teacher.school}</p> </div>
+              <div className="teacherprofileinfo-details">  <p>{teacher.date_of_birth}</p> </div>
+              <div className="teacherprofileinfo-details">  <p>{teacher.contact_number}</p> </div>
+               <div className="teacherprofileinfo-details">  <p>{teacher.email}</p> </div>
               </div>
               </div>
           {/* </>)} */}
