@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from "../../components/StudentDashboardHeader.js";
-
 import Footer from "../../Shared components/Footer.js";
 
 export default function StudentDashboardInstructions() {

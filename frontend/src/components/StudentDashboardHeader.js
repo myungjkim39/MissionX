@@ -1,13 +1,13 @@
 import "./StudentDashboardHeader.css";
 
-export default function Header() {
+export default function StudentHeader() {
   return (
-    <div className="header">
-      <div className="left">
+    <div className="student-header">
+      <div className="student-left">
         <img
           src="/src-assets/NavBar/LevelUpWorks-blue.png"
           alt="Level Up Logo"
-          className="logo"
+          className="student-logo"
         />
 
         <div className="projectName">
@@ -16,38 +16,38 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="center">
+      <div className="student-center">
 
-      <div className="circle">1</div>
+      <div className="student-circle">1</div>
 
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
-      <div className="mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
+      <div className="student-mini-circle"></div>
       </div>
 
-      <div className="right">
-        <button className="screen-btn"> Take Screenshot </button>
-        <button className="help-btn"> Ask Teacher for help </button>
-        <button className="projects-btn"> More Projects </button>
+      <div className="student-right">
+        <button className="student-screen-btn"> Take Screenshot </button>
+        <button className="student-help-btn"> Ask Teacher for help </button>
+        <button className="student-projects-btn"> More Projects </button>
 
-        <div className="flagimages">
-          <img src="/src-assets/NavBar/NZflag.png" alt="nzFlag" className="nzflag" />
+        <div className="flag-images">
+          <img src="/src-assets/NavBar/NZflag.png" alt="student-nz-Flag" className="nzflag" />
 
           <img
             src="/src-assets/NavBar/Maoriflag.png"
             alt="Maoriflag"
-            className="maoriflag"
+            className="student-maori-flag"
           />
         </div>
       </div>

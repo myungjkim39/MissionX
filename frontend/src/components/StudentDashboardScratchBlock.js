@@ -1,14 +1,14 @@
 import React from "react";
-import Sidebar from "./StudentDashboardSidebar";
+import StudentSidebar from "./StudentDashboardSidebar";
 import "./StudentDashboardScratchBlock.css";
 
 export default function ScratchBlock() {
   return (
-    <div className="outerbox">
-      <Sidebar />
-      <div id="contentbox">
-        <div id="innerbox">
-          <div className= "content">
+    <div className="outer-box">
+      <StudentSidebar />
+      <div className="content-box">
+        <div className="inner-box">
+          <div className= "student-content">
             <h1>explore Scratch blocks</h1>
             <p2>
               Learn the basic function of some basic scratch blocks such as
