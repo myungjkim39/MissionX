@@ -16,13 +16,29 @@ const db = mysql.createConnection({
 
 db.connect();
 
-app.get('/teacher_id', (req, res) => {
-    const sql = 'Select * from teacher_id';
+app.get('/teacher', (req, res) => {
+    const sql = 'Select name, email, school, profile_pic, date_of_birth, contact_number from missio20_team3.teacher;';
 
-    db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.send(result);
+    db.query(sql, (error, result) => {
+      if (error) throw error;
+      else { res.send(result) };
 });
+});
+
+app.get("/teacher2", (req, res) => {
+console.log("Received a GET request to /");
+db.query(
+    `Select name, email, school, profile_pic, date_of_birth, contact_number from missio20_team3.teacher;`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+      } else {
+        console.log(result);
+        res.send(result);
+      }
+    }
+  );
 });
 
 const mockdata = {
