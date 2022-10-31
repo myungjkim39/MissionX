@@ -42,7 +42,7 @@ export default function StudentHeader() {
         <button className="student-projects-btn"> More Projects </button>
 
         <div className="flag-images">
-          <img src="/src-assets/NavBar/NZflag.png" alt="student-nz-Flag" className="nzflag" />
+          <img src="/src-assets/NavBar/NZflag.png" alt="student-nz-Flag" className="student-nz-flag" />
 
           <img
             src="/src-assets/NavBar/Maoriflag.png"
