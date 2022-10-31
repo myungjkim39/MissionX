@@ -17,13 +17,13 @@
    background-color:#e0f4fd ;
    border-radius: 30px;
    width: 1200px;
-   height: 800px;
+   height: 600px;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
 
    text-align: left;
-   margin: 109px 50px 83px  236px;  
+   margin: 20px 50px 83px  236px;  
 }
 
 /*Main Header*/

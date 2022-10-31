@@ -10,7 +10,7 @@ export default function PartOne(props) {
   <div className='progressTrackerAll'>
     <div className='progressTrackerLightBackground'>
      <div className='progressTrackerExport'>
-        <div className='ExportIcon'> <img src='./ImagesProgressTracker/ExportIcon.jpg' alt='exporticon'/>
+        <div className='ExportIcon'> <img src='/ImagesProgressTracker/ExportIcon.jpg' alt='exporticon'/>
         </div>
         <div className='exportText'>{LetsExport}
         </div>

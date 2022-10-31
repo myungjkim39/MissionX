@@ -3,7 +3,7 @@ import ProgressCircles from "./ProgressCircles";
 import "./StudentReco.css";
 
 export default function StudentReco(props) {
-  const CompletedStatement = "Projects completed";
+  const CompletedStatement = "0/15 Projects completed";
   return (
     <div className="progresstrackerWhite">
       <div className="left">
