@@ -1,5 +1,5 @@
 import './TeacherHelpRequest.css';
-import React, { useState }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import Aiden from '../images/AidenAndrews.png'
 import Rawiri from '../images/RawiriFletcher.png'
 import Neveah from '../images/NeveahMachenry.png'
@@ -19,6 +19,12 @@ const studentDatabase = [
 ]
 
 function HelpRequestBox(props) {
+
+  //   const [teacher, setTeacher] = useState({ date_created:'TeacherPic', done:'done'})
+  // useEffect(() => {
+  //   fetch('http://localhost:4000/helprequest').then(res => res.json()).then(json => setTeacher(json[0])).catch(err => console.log(err))
+  // }, [])
+
   console.log(props.profileImage)
   return (
       <div className="helpRequest-boxContainer">
