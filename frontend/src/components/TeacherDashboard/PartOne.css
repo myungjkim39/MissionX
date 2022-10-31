@@ -16,8 +16,8 @@
   .progressTrackerLightBackground{
    background-color:#e0f4fd ;
    border-radius: 30px;
-   width: 1000px;
-   height: 800px;
+   width: 1200px;
+   height: 600px;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
