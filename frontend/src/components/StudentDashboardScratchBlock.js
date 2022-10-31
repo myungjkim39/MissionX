@@ -4,12 +4,15 @@ import "./StudentDashboardScratchBlock.css";
 
 export default function ScratchBlock() {
   return (
-    <div className="outer-box">
+   <div className="outer-box">
       <StudentSidebar />
-      <div className="content-box">
+    
+    {/* Inserted into Database */}
+      
+      {/* <div className="content-box">
         <div className="inner-box">
           <div className= "student-content">
-            <h1>explore Scratch blocks</h1>
+            <h1>Explore Scratch blocks</h1>
             <p2>
               Learn the basic function of some basic scratch blocks such as
               “say,” “wait,” “go to” and “hide.”
@@ -60,7 +63,9 @@ export default function ScratchBlock() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
+
+
