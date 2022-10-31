@@ -1,14 +1,14 @@
 import React from "react";
-import Sidebar from "./StudentDashboardSidebar";
+import StudentSidebar from "./StudentDashboardSidebar";
 import "./StudentDashboardScratchBlock.css";
 
 export default function Project() {
   return (
-    <div className="outerbox">
-      <Sidebar />
-      <div id="contentbox">
-        <div id="innerbox">
-          <div className="content">
+    <div className="outer-box">
+      <StudentSidebar />
+      <div className="content-box">
+        <div className="inner-box">
+          <div className="student-content">
             <img
               src="/src-assets/StudentDashboard/makeProject-screenshot.png"
               alt="project"
