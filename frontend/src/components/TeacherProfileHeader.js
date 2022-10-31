@@ -17,7 +17,9 @@ export default function Header(props) {
           <button className="teacher-profile-home">HOME</button>
           </Link>
         <button className="teacher-profile-projects">PROJECTS</button>
-        <button className="teacher-profile-teachers">TEACHERS</button>
+        <Link to="/teacherdashboard/helprequests">
+          <button className="teacher-profile-teachers">TEACHERS</button>
+          </Link>
                 </div>
 
       <div className="teacherprofile-flagsimage">
