@@ -4,8 +4,8 @@ const dotenv = require("dotenv").config();
 const cors = require("cors");
 const app = express();
 
-app.use(cors())
-const connection = mysql.createConnection({
+app.use(cors());
+const pool = mysql.createPool({
   host: process.env.MYSQL_HOST,
   database: process.env.MYSQL_DATABASE,
   user: process.env.MYSQL_USER,
@@ -13,8 +13,23 @@ const connection = mysql.createConnection({
 });
 
 app.get("/studentdashboard/video", (req, res) => {
-  connection.query(
+  pool.query(
     `SELECT video FROM missio20_team3.project;`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You have an error" + error.code);
+      } else {
+        console.log(result);
+        res.send(result);
+      }
+    }
+  );
+});
+
+app.get("/studentdashboard/objectives", (req, res) => {
+  pool.query(
+    `SELECT learning_objective FROM missio20_team3.project;`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
