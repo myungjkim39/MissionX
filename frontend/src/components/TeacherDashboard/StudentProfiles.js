@@ -1,7 +1,8 @@
 import React from "react";
 import './StudentProfiles.css';
+import React, {useEffect, useState} from 'react'
 
-const studentDetails = [
+/*const studentDetails = [
     {
         name:'AIDEN ANDREWS',
         profilePicture:"/students/AidenAndrews.png"
@@ -64,17 +65,19 @@ const studentDetails = [
     },
 
 ]
-
+*/
 export default function StudentProfiles() {
-   
+    const [student, setStudent] = useState({ profile_pic:'profile_pic', name:'name'})
+    useEffect(() => {
+      fetch('http://localhost:4000/serverAnn').then(res => res.json()).then(json => set(json[0])).catch(err => console.log(err))}, [])
   return (
     <div className='studentProfiles'>
         {studentDetails.map((studentDetails)=>(
 
             <div className="profilesInBox">
 
-              <img src={studentDetails.profilePicture} alt='studentImage'/>
-              {studentDetails.name}
+              <img src={student.profile_pic} alt='studentImage'/>
+              {student.name}
 
            </div>
 
@@ -85,4 +88,6 @@ export default function StudentProfiles() {
   );
 }
 
+//<img src={studentDetails.profilePicture} alt='studentImage'/>
+             // {studentDetails.name}
 
