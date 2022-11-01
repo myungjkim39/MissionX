@@ -2,6 +2,7 @@ import React from "react";
 import ProgressCircles from "./ProgressCircles";
 import "./StudentReco.css";
 
+
 export default function StudentReco(props) {
   const CompletedStatement = "0/15 Projects completed";
   return (
