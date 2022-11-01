@@ -1,4 +1,4 @@
-import React from "react";
+
 import './StudentProfiles.css';
 import React, {useEffect, useState} from 'react'
 
@@ -69,10 +69,10 @@ import React, {useEffect, useState} from 'react'
 export default function StudentProfiles() {
     const [student, setStudent] = useState({ profile_pic:'profile_pic', name:'name'})
     useEffect(() => {
-      fetch('http://localhost:4000/serverAnn').then(res => res.json()).then(json => set(json[0])).catch(err => console.log(err))}, [])
+      fetch('http://localhost:4000/serverAnn').then(res => res.json()).then(json => setStudent(json[0])).catch(err => console.log(err))}, [])
   return (
     <div className='studentProfiles'>
-        {studentDetails.map((studentDetails)=>(
+       
 
             <div className="profilesInBox">
 
@@ -81,12 +81,12 @@ export default function StudentProfiles() {
 
            </div>
 
-
-))}
-      
     </div>
   );
 }
+//{studentDetails.map((studentDetails)=>(
+
+    //<div className="profilesInBox">
 
 //<img src={studentDetails.profilePicture} alt='studentImage'/>
              // {studentDetails.name}
