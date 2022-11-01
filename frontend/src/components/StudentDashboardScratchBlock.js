@@ -1,11 +1,28 @@
 import React from "react";
 import StudentSidebar from "./StudentDashboardSidebar";
 import "./StudentDashboardScratchBlock.css";
+import { useState, useEffect } from "react";
 
 export default function ScratchBlock() {
+  const [objectiveHtml, setobjectiveHtml] = useState([]);
+
+  const getObjectives = () => {
+    fetch("http://localhost:4000/studentdashboard/objectives")
+      .then((res) => res.json())
+
+      .then((objectiveData) => {
+        //console.log(StudentProfileData);
+
+        setobjectiveHtml(objectiveData[0].html);
+      });
+  };
+
+  useEffect(() => getObjectives());
+  
   return (
    <div className="outer-box">
       <StudentSidebar />
+      <div dangerouslySetInnerHTML={{__html: objectiveHtml}} />
     
     {/* Inserted into Database */}
       
