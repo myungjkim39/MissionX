@@ -15,7 +15,7 @@ html, body{
     flex-direction: column;
     border: 1px;
     width: 15%;
-    height: 85vh;
+    height: 86vh;
     background-color:#43C0F6;
     color: white;
   }
@@ -67,7 +67,7 @@ html, body{
 .bot-options {
   display: flex;
   flex-direction: row;
-  padding-top: 22vh;
+  padding-top: 19vh;
   justify-content: space-evenly;
 }
 
