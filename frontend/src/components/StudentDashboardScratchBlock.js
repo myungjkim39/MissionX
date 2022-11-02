@@ -4,28 +4,28 @@ import "./StudentDashboardScratchBlock.css";
 import { useState, useEffect } from "react";
 
 export default function ScratchBlock() {
-  const [objectiveHtml, setobjectiveHtml] = useState([]);
+  const [objectiveHtml, setObjectiveHtml] = useState([]);
 
   const getObjectives = () => {
     fetch("http://localhost:4000/studentdashboard/objectives")
       .then((res) => res.json())
 
       .then((objectiveData) => {
-        //console.log(StudentProfileData);
+        console.log(objectiveData);
 
-        setobjectiveHtml(objectiveData[0].html);
+        setObjectiveHtml(objectiveData);
       });
   };
 
-  useEffect(() => getObjectives());
-  
+  useEffect(() => getObjectives(), []);
+
   return (
-   <div className="outer-box">
+    <div className="outer-box">
       <StudentSidebar />
-      <div dangerouslySetInnerHTML={{__html: objectiveHtml}} />
-    
-    {/* Inserted into Database */}
-      
+      <div dangerouslySetInnerHTML={{ __html: objectiveHtml }} />
+
+      {/* Inserted into Database */}
+
       {/* <div className="content-box">
         <div className="inner-box">
           <div className= "student-content">
@@ -84,5 +84,3 @@ export default function ScratchBlock() {
     </div>
   );
 }
-
-

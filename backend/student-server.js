@@ -35,8 +35,8 @@ app.get("/studentdashboard/objectives", (req, res) => {
         console.log("Error", error);
         res.send("You have an error" + error.code);
       } else {
-        console.log(result);
-        res.send(result);
+        console.log(result[0].learning_objective);
+        res.json(result[0].learning_objective);
       }
     }
   );

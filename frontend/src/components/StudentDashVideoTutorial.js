@@ -27,10 +27,11 @@ export default function VideoTutorial() {
           <div className="content">
             <div className="blocks">
               <div className="left-box">
-                <div className="arrow-circle" />
-                <p4>
-                  <i class="arrow-left"></i>
-                </p4>
+                <div className="arrow-circle">
+                  <p4>
+                    <i class="arrow-left"></i>
+                  </p4>
+                </div>
               </div>
               <iframe
                 src={videoLink}
@@ -47,10 +48,11 @@ export default function VideoTutorial() {
                 <a href="https://vimeo.com"></a>.
               </p>
               <div className="right-box">
-                <div className="arrow-circle" />
-                <p4>
-                  <i class="arrow-right"></i>
-                </p4>
+                <div className="arrow-circle">
+                  <p4>
+                    <i class="arrow-right"></i>
+                  </p4>
+                </div>
               </div>
             </div>
           </div>
