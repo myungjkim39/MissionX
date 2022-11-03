@@ -9,21 +9,22 @@
 
 
   .progressTrackerAll{
-  margin: 50px;
+  margin: 30px;
   }
 
 /* Llight Big Box*/
   .progressTrackerLightBackground{
    background-color:#e0f4fd ;
    border-radius: 30px;
-   width: 1200px;
+   width: 1100px;
    height: 600px;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   position: fixed;
 
    text-align: left;
-   margin: 20px 50px 83px  236px;  
+   margin: 30px 50px 83px  236px; 
 }
 
 /*Main Header*/
@@ -43,7 +44,7 @@
    flex-direction: row;
    justify-content: flex-end;
    margin-right: 50px;
-   margin-top: 50px;
+   margin-top: 30px;
    color:#6C6C6C ;
    font-family: 'Open Sans', sans-serif;
    
