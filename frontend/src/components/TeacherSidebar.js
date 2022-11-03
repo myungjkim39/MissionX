@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import React from "react";
+// import React from "react";
 import './TeacherSidebar.css';
 import JasminaSalvador from '../images/JasminaSalvador.png';
 import ProgressTracker from "../images/progressTrackerSelected.png";
@@ -11,7 +11,7 @@ import ArrowLeft from "../images/arrowLeft.png";
 import UserProfile from "../images/userprofile.png";
 import Settings from "../images/settings.png";
 import Logout from "../images/Logout.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Sidebar() {
     const sidebarCollapsed = localStorage.getItem('sidebar-collapsed');
@@ -35,31 +35,31 @@ function Sidebar() {
             <div className="helprequest-sidebar-items">
 
                 <div>
-                    <Link id="link" to={"/teacherprofile"}>
+                    <NavLink id="link" to={"/teacherprofile"}>
                         <img src={JasminaSalvador} className="helprequest-jasmina" alt="" />
-                        </Link>
+                        </NavLink>
         </div>
                 
                 <div className="teacherdash-sidebar-item">
-                    <Link id="link" to={"/teacherdashboard/progresstracker"}>
+                    <NavLink id="link" to={"/teacherdashboard/progresstracker"}>
                     <img src={ProgressTracker} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROGRESS TRACKER</span>
-                        </Link>
+                        </NavLink>
                 </div>
                 
                 <div className="teacherdash-sidebar-item">
-                     <Link id="link" to={"/studentprofile"}>
+                     <NavLink id="link" to={"/teacherdashboard/studentprofiles"}>
                     <img src={StudentProfiles} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">STUDENTS PROFILE</span>
-                        </Link>
+                        </NavLink>
                 </div>
 
 
                 <div className="teacherdash-sidebar-item">
-                    <Link id="link" to={"/teacherdashboard/helprequests"}>
+                    <NavLink id="link" to={"/teacherdashboard/helprequests"}>
                     <img src={HelpRequest} className="sidebar-icon" alt="" />
                     <span className="sidebar-text">HELP REQUEST</span>
-                </Link>
+                </NavLink>
                     </div>
                     
 
@@ -69,10 +69,10 @@ function Sidebar() {
                 </div>
 
                 <div className="teacherdash-sidebar-item">
-                    <Link id="link" to={"/teacherprojectlibrary"}>
+                    <NavLink id="link" to={"/teacherprojectlibrary"}>
                     <img src={ProjectLibrary} className="sidebar-icon" alt="" />
                         <span className="sidebar-text">PROJECT LIBRARY</span>
-                        </Link>
+                        </NavLink>
                 </div>
 
             <div className="pinkarrow-min">
@@ -85,10 +85,10 @@ function Sidebar() {
                 <div className="bottom-options">
 
                     <div className="user-profile">
-                        <Link id="link" to={"/teacherprofile"}>
+                        <NavLink id="link" to={"/teacherprofile"}>
                     <img src={UserProfile} className="profile-settings" alt="" /> <br></br>
                             <span className="sidebar-text">Profile</span>
-                            </Link>
+                            </NavLink>
                     </div>
                     
                 <div className="user-profile">
@@ -97,10 +97,10 @@ function Sidebar() {
                     </div>
 
                     <div className="user-profile">
-                        <Link id="link" to={"/"}>
+                        <NavLink id="link" to={"/"}>
                         <img src={Logout} className="profile-settings" alt="" /> <br></br>
                             <span className="sidebar-text">Log out</span> 
-                            </Link>
+                            </NavLink>
                     </div>
            </div> 
 
