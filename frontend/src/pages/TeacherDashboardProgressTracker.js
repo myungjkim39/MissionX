@@ -14,7 +14,7 @@ export default function TeacherDashboardProgressTracker() {
   return (
     //calling components
     
-    <div className='teacherDashBackgroundPR'>
+    <div>
      
      <TeacherDashboardHeader />
      <TeacherSidebar/>
