@@ -1,6 +1,6 @@
 import React from "react";
 import StudentSidebar from "./StudentDashboardSidebar";
-import "./StudentDashboardScratchBlock.css";
+import "./StudentDashProjectContent.css";
 
 export default function Project() {
   return (
