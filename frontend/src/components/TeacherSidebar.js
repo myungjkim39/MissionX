@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import React from "react";
+// import React from "react";
 import './TeacherSidebar.css';
 import JasminaSalvador from '../images/JasminaSalvador.png';
 import ProgressTracker from "../images/progressTrackerSelected.png";

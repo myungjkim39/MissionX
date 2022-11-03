@@ -39,15 +39,16 @@
     justify-content:center;
     column-gap: 2vw;
     row-gap: 2vh;
-    margin: 109px 50px 83px  236px;  
+    margin: 30px 50px 83px  236px;  
 
 
     
  }
 
- body{
+  
+/*{
     background-color: #B2E4FA;
- }
+ } */
 
  
 

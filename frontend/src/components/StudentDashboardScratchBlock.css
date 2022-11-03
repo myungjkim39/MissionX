@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 .outer-box {
   display: flex;
   border: 1px, solid;
@@ -11,7 +18,7 @@
   display: flex;
   justify-content: center;
   width: 85%;
-  height: 70vh;
+  height: 75vh;
 }
 
 .inner-box {
@@ -32,14 +39,6 @@
   line-height: 45px;
 }
 
-h1 {
-  font-size: 24px;
-}
-
-p2 {
-  font-size: 16px;
-}
-
 .blocks {
   display: flex;
   flex-direction: row;
@@ -47,120 +46,19 @@ p2 {
   justify-content: flex-start;
 }
 
-.block1 {
+/* StudentDashInstructions.js */
+
+.student-inst-content {
+  opacity: 1;
+  margin-left: 15.5vw;
+  margin-right: 15.5vw;
+}
+
+.instructions-content {
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
-  margin-right: 25px;
-  font-style: nunito, bold;
-  font-size: 18px;
+  justify-content: flex-start;
+  margin-top: 2vh;
 }
 
-.object1 {
-  width: 180px;
-  height: 400px;
-}
 
-.object2 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 160px;
-  height: 100px;
-}
-
-.block2 {
-  display: flex;
-  flex-direction: column;
-  margin-left: 120px;
-  margin-right: 25px;
-  font-style: nunito, bold;
-  font-size: 18px;
-}
-
-.object3 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 143px;
-  height: 48px;
-}
-
-.block3 {
-  display: flex;
-  flex-direction: column;
-  margin-left: 120px;
-  margin-right: 25px;
-  font-style: nunito, bold;
-  font-size: 18px;
-}
-
-.object4 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 200px;
-  height: 80px;
-}
-
-/* StudentDashProject content.js */
-.project-screenshot {
-  display: flex;
-  width: 78vw;
-  height: 65vh;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-/* StudentDashVideoTutorial.js */
-.video-screenshot {
-  display: flex;
-  width: 50vw;
-  height: 50vh;
-  margin-top: 5vh;
-}
-
-.left-box {
-  display: flex;
-  flex-direction: column;
-  margin: 23vh 5vw;
-}
-
-.right-box {
-  display: flex;
-  flex-direction: column;
-  margin: 23vh 5vw;
-}
-
-.arrow-left {
-  border: solid red;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  
-}
-
-.arrow-right {
-  border: solid red;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.arrow-circle {
-  color: #ffffff80;
-  border-color: #ffffff;
-  width: 6vh;
-  height: 6vh;
-  border-radius: 50%;
-  border-style: solid;
-}
-
-.student-video {
-  display: flex;
-  margin-top: 5vh;
-}
