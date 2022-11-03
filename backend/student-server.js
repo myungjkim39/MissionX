@@ -42,6 +42,21 @@ app.get("/studentdashboard/objectives", (req, res) => {
   );
 });
 
+app.get("/studentdashboard/instructions", (req, res) => {
+  pool.query(
+    `SELECT instructions FROM missio20_team3.project;`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You have an error" + error.code);
+      } else {
+        console.log(result[0].instructions);
+        res.json(result[0].instructions);
+      }
+    }
+  );
+});
+
 const PORT = process.env.PORT;
 console.log("Server running at port", PORT);
 

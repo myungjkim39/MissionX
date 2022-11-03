@@ -1,6 +1,6 @@
 import React from "react";
 import StudentSidebar from "./StudentDashboardSidebar";
-import "./StudentDashboardScratchBlock.css";
+import "./StudentDashVideoTutorial.css";
 import { useState, useEffect } from "react";
 
 export default function VideoTutorial() {
