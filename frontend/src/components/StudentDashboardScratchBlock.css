@@ -46,7 +46,7 @@ html, body{
   justify-content: flex-start;
 }
 
-/* StudentDashInstructions.js */
+/* css only for StudentDashInstructions.js */
 
 .student-inst-content {
   opacity: 1;

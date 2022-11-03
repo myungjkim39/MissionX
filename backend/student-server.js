@@ -13,8 +13,8 @@ const pool = mysql.createPool({
 });
 
 app.get("/studentdashboard/video", (req, res) => {
-  pool.query(
-    `SELECT video FROM missio20_team3.project;`,
+  pool.execute(
+    `SELECT video FROM missio20_team3.project WHERE project_id = 1 ;`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
@@ -28,8 +28,8 @@ app.get("/studentdashboard/video", (req, res) => {
 });
 
 app.get("/studentdashboard/objectives", (req, res) => {
-  pool.query(
-    `SELECT learning_objective FROM missio20_team3.project;`,
+  pool.execute(
+    `SELECT learning_objective FROM missio20_team3.project WHERE project_id = 1;`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
@@ -43,8 +43,8 @@ app.get("/studentdashboard/objectives", (req, res) => {
 });
 
 app.get("/studentdashboard/instructions", (req, res) => {
-  pool.query(
-    `SELECT instructions FROM missio20_team3.project;`,
+  pool.execute(
+    `SELECT instructions FROM missio20_team3.project WHERE project_id = 1;`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
