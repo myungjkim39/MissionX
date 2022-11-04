@@ -28,14 +28,14 @@
     margin-top: 2vh;
   }
   
-  h3 {
+  .student-h3 {
     font-style: nunito, black;
     font-size: 21px;
     margin: 0;
     color: #6C6C6C;
   }
   
-  p {
+  .student-p {
     font-style: open sans, regular;
     font-size: 14px;
     margin: 4px;

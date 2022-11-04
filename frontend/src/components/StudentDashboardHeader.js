@@ -11,8 +11,8 @@ export default function StudentHeader() {
         />
 
         <div className="projectName">
-          <h3 className="h3">PROJECT</h3>
-          <p className="p">Introduction</p>
+          <h3 className="student-h3">PROJECT</h3>
+          <p className="student-p">Introduction</p>
         </div>
       </div>
 
