@@ -16,22 +16,22 @@ function Home() {
     <div className="Homepage">
       <Navbar />
       <Header />
-      <br />
-      <StudentsCreation> students </StudentsCreation>
+      {/* <br /> */}
+      {/* <StudentsCreation /> */}
+      {/* <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br />
+      <br /> */}
 
-      <MiddleOfHomePage>hello</MiddleOfHomePage>
-      <br></br>
-      <br></br>
-      <KeyCompetencies>hello</KeyCompetencies>
-      <br></br><br></br>
-      <Classroom>picture</Classroom>
-      <br></br><br></br><br></br>
-      <Footer></Footer>
+      <MiddleOfHomePage />
+      {/* <br></br>
+      <br></br> */}
+      <KeyCompetencies />
+      {/* <br></br><br></br> */}
+      <Classroom />
+      {/* <br></br><br></br><br></br> */}
+      <Footer />
 
       
     </div>

@@ -5,12 +5,14 @@
 }
 .navlogo {
   display: flex;
+  height: 50px;
+  width: 45px;
 }
 
 .navList {
   background: rgba(67, 192, 246, 1);
   margin: 0;
-  margin-left: 4rem;
+  margin-left: 8rem;
   display: flex;
   align-items: flex-end;
 }
@@ -45,8 +47,6 @@
   display: flex;
   margin-left: auto;
   margin-right: 20px;
-
- 
 }
 .navLogin {
   display: flex;
@@ -54,7 +54,6 @@
   margin-right: 0px;
   padding: 5px;
 }
-
 .navSignup {
   margin-right: auto;
   margin-left: 0px;
@@ -67,4 +66,10 @@
   height: 18px;
   margin-top: auto;
   margin-bottom: 4px;
+}
+.navAvatar{
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+  width: 20px;
 }

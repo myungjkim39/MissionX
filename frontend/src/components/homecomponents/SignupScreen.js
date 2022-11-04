@@ -1,5 +1,6 @@
 import React from "react";
 import "./SignupScreen.css";
+import {Link} from "react-router-dom"
 
 function SignupScreen() {
   return (
@@ -14,7 +15,7 @@ function SignupScreen() {
           <h1>Students</h1>
         </div>
         <div className="loginButtonsContainer">
-          <button className="loginbuttons">LOG IN</button>
+          <Link to="/login"><button className="loginbuttons">LOG IN</button></Link>
           <button className="loginbuttons">SIGN UP</button>
         </div>
           <form action="mailto:surbhig@missionreadyhq.com" method="POST">
@@ -51,7 +52,6 @@ function SignupScreen() {
               required
             />
             </div>
-            <br></br>
             <div className="buttonplaceholder">
             <button className="loginbutton">Login</button>
             </div>
@@ -106,7 +106,6 @@ function SignupScreen() {
               required
             />
             </div>
-            <br></br>
             <div className="buttonplaceholder">
             <button className="loginbutton">Login</button>
             </div>
