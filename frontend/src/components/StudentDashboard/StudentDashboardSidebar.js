@@ -1,18 +1,18 @@
 import { useState } from "react";
 import React from "react";
 import "./StudentDashboardSidebar.css";
-import RawiriFletcher from "../images/RawiriFletcher.png";
-import LearningObjectives from "../images/src-assets/StudentDashboard/learningObjectives.png";
-import Instructions from "../images/src-assets/StudentDashboard/instructions.png";
-import VideoTutorial from "../images/src-assets/StudentDashboard/video.png";
-import MakeProject from "../images/src-assets/StudentDashboard/makeProject.png";
-import SubmitProject from "../images/src-assets/StudentDashboard/submitProject.png";
-import BonusChallenge from "../images/src-assets/StudentDashboard/bonusChallenge.png";
-import TakeTheQuiz from "../images/src-assets/StudentDashboard/takeTheQuiz.png";
-import ArrowLeft from "../images/arrowLeft.png";
-import UserProfile from "../images/userprofile.png";
-import Settings from "../images/settings.png";
-import Logout from "../images/Logout.png";
+import RawiriFletcher from "../../images/RawiriFletcher.png";
+import LearningObjectives from "../../images/src-assets/StudentDashboard/learningObjectives.png";
+import Instructions from "../../images/src-assets/StudentDashboard/instructions.png";
+import VideoTutorial from "../../images/src-assets/StudentDashboard/video.png";
+import MakeProject from "../../images/src-assets/StudentDashboard/makeProject.png";
+import SubmitProject from "../../images/src-assets/StudentDashboard/submitProject.png";
+import BonusChallenge from "../../images/src-assets/StudentDashboard/bonusChallenge.png";
+import TakeTheQuiz from "../../images/src-assets/StudentDashboard/takeTheQuiz.png";
+import ArrowLeft from "../../images/arrowLeft.png";
+import UserProfile from "../../images/userprofile.png";
+import Settings from "../../images/settings.png";
+import Logout from "../../images/Logout.png";
 import { Link } from "react-router-dom";
 
 export default function StudentSidebar() {

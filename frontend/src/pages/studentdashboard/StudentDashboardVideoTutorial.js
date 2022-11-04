@@ -1,6 +1,6 @@
 import React from "react"
-import StudentHeader from "../../components/StudentDashboardHeader.js"
-import VideoTutorial from "../../components/StudentDashVideoTutorial.js"
+import StudentHeader from "../../components/StudentDashboard/StudentDashboardHeader.js"
+import VideoTutorial from "../../components/StudentDashboard/StudentDashVideoTutorial.js"
 import Footer from "../../components/Shared-components/Footer.js"
 export default function StudentDashboardVideoTutorial() {
   return (
