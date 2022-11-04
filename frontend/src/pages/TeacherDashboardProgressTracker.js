@@ -2,20 +2,14 @@ import React from 'react'
 
 import PartOne from '../components/TeacherDashboard/PartOne'
 import Footer from '../Shared components/Footer'
-<<<<<<< HEAD
-import PrBackground from '../components/TeacherDashboard/PrBackground'
+// import PrBackground from '../components/TeacherDashboard/PrBackground'
 import TeacherDashboardHeader from "../components/TeacherDashboardHeader"
 import TeacherSidebar from '../components/TeacherSidebar'
-
-=======
->>>>>>> fbd6c5feef6522f2e691140f2bdf56fcf5d139bb
-
-import TeacherDashboardHeader from "../components/TeacherDashboardHeader"
-import TeacherSidebar from '../components/TeacherSidebar'
-import "./TeacherDash.css"
+import "./Teacherdash.css"
 
 //import PrBackground from '../components/TeacherDashboard/PrBackground'
 //<PrBackground/>
+
 
 export default function TeacherDashboardProgressTracker() {
   return (
