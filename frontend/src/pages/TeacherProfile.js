@@ -12,50 +12,62 @@ function TeacherProfileViewer() {
   return (
     <div className="teacher-profile">
       <Header teacherName={teacher.name} />
-        <div className="teacher-profile-side">
+      <div className="teacher-profile-side">
         <div className="teacherprofile-options">
-          <img src= {teacher.profile_pic} width="width: 59px" alt="T Image" /> <br />
-            <button type="button" className="teacher-profile-btn1">EDIT PROFILE</button>
-            <button type="button" className="teacher-profile-btn1">CHANGE PHOTO</button>
-            <button type="button" className="teacher-profile-btn1">SETTINGS</button>
-            </div>
+          <img src={teacher.profile_pic} width="width: 59px" alt="T Image" />
+          <br />
+          <button type="button" className="teacher-profile-btn1">
+            EDIT PROFILE
+          </button>
+          <button type="button" className="teacher-profile-btn1">
+            CHANGE PHOTO
+          </button>
+          <button type="button" className="teacher-profile-btn1">
+            SETTINGS
+          </button>
+        </div>
 
         <div className="teacher-info">
-          
-          {/* {teacher && (<> */}
-            
-           <div className="teacherprofileinfo-name"> <h3>{teacher.name}</h3> </div>
-            
-            <div className="teacherprofileinfo-mainschool">
-            <div className="teacherprofileinfo-school">
-             <div className="teacherprofileinfo-title"> <h4>School</h4> </div> 
-             <div className="teacherprofileinfo-title"> <h4>Date of Birth</h4> </div>
-               <div className="teacherprofileinfo-title"> <h4>Contact No</h4> </div>
-                <div className="teacherprofileinfo-title"> <h4>Email Address</h4> </div>
-              </div>
 
-            <div className="teacherprofileinfo-school2">
-             <div className="teacherprofileinfo-details"> <p>{teacher.school}</p> </div>
-              <div className="teacherprofileinfo-details">  <p>{teacher.date_of_birth}</p> </div>
-              <div className="teacherprofileinfo-details">  <p>{teacher.contact_number}</p> </div>
-               <div className="teacherprofileinfo-details">  <p>{teacher.email}</p> </div>
-              </div>
-              </div>
-          {/* </>)} */}
+          <div className="teacherprofileinfo-name">
+            <h3>{teacher.name}</h3>
+          </div>
 
+          <div className="teacherprofileinfo-mainschool">
+            <div className="teacherprofileinfo-title">
+              <h4>School</h4>
+              <p>{teacher.school}</p>
+            </div>
+            <div className="teacherprofileinfo-title">
+              <h4>Date of Birth</h4>
+              <p>{teacher.date_of_birth}</p>
+            </div>
+            <div className="teacherprofileinfo-title">
+              <h4>Contact No</h4>
+              <p>{teacher.contact_number}</p>
+            </div>
+            <div className="teacherprofileinfo-title">
+              <h4>Email Address</h4>
+              <p>{teacher.email}</p>
+            </div>
           </div>
         </div>
-        <div className="dashboard-projects">
-          <Link to="/teacherprojectlibrary">
-            <button type="button" className="teacherprofile-back-projects">BACK TO PROJECTS</button>
-          </Link>
-          <Link to="/">
-            <button type="button" className="teacherprofile-back-dashboard">BACK TO DASHBOARD</button>
-            </Link>
-        </div>
-        <Footer />
       </div>
-    )
+      <div className="dashboard-projects">
+        <Link to="/teacherprojectlibrary">
+          <button type="button" className="teacherprofile-back-projects">
+            BACK TO PROJECTS
+          </button>
+        </Link>
+        <Link to="/">
+          <button type="button" className="teacherprofile-back-dashboard">
+            BACK TO DASHBOARD
+          </button>
+        </Link>
+      </div>
+      <Footer />
+    </div>
+  );
   }
 
 export default TeacherProfileViewer

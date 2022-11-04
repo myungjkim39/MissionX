@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 412px;
+    /* height: 412px; */
     width: 450px;
     border: 2px solid #E2DFDF;
     border-radius: 30px;
@@ -87,29 +87,20 @@
 .teacherprofileinfo-name{
     font-size: 35px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 .teacherprofileinfo-title{
     color: #A5A5A5;
-    margin-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;  
+    margin-bottom: -20px;
+    font-size: 17px;
 }
-.teacherprofileinfo-title, .teacherprofileinfo-details{
-    margin-bottom: 30px;
-}
-
 .teacherprofileinfo-mainschool{
     display: flex;
-    flex-direction: row;
-}
-.teacherprofileinfo-school{
-    display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    padding-left: 0px;
-}
-.teacherprofileinfo-school2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 90%;
 }
