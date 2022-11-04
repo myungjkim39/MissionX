@@ -71,6 +71,7 @@ export default function StudentProfiles() {
     useEffect(() => {
       fetch('http://localhost:4000/pages/TeacherDashboardStudentProfiles').then(res => res.json()).then(json => setStudent(json)).catch(err => console.log(err))}, [])
   return (
+    <div classname='teacherBackground'>
     <div className='studentProfiles'>
     {studentDetails.map((studentDetails)=>(
 
@@ -78,14 +79,15 @@ export default function StudentProfiles() {
 
           <img src={studentDetails.profile_pic} alt='studentImage'/>
           {studentDetails.name}
-
+          
        </div>
-
-
 ))}
   
 </div>
+</div>
+
 );
+
 }
 
 
