@@ -14,8 +14,8 @@ function TeacherHelpRequest(props) {
   const dateTime = new Date().toDateString();
 
   const studentDatabase = [
-    { name: "AIDEN", profileImage: Aiden, dateTime: dateTime, done: false },
-    { name: "RAWIRI", profileImage: Rawiri, dateTime: dateTime, done: false },
+    { name: "AIDEN", profileImage: Aiden, dateTime: dateTime, done: true },
+    { name: "RAWIRI", profileImage: Rawiri, dateTime: dateTime, done: true },
     { name: "NEVEAH", profileImage: Neveah, dateTime: dateTime, done: false },
     { name: "JAVIER", profileImage: Javier, dateTime: dateTime, done: false },
     { name: "TOKIO", profileImage: Tokio, dateTime: dateTime, done: false },
