@@ -1,7 +1,7 @@
 import React from 'react'
-import StudentHeader from "../../components/StudentDashboardHeader.js";
-import Project from "../../components/StudentDashProjectContent.js";
-import Footer from "../../Shared components/Footer.js";
+import StudentHeader from "../../components/StudentDashboardHeader.js"
+import Project from "../../components/StudentDashProjectContent.js"
+import Footer from "../../components/Shared-components/Footer.js"
 
 export default function StudentDashBoardMakeProject() {
   return (
