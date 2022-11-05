@@ -22,26 +22,26 @@ const connection = mysql.createConnection({
     }
   })
 
-app.get('/studentpassword',(req,res) => {
-    console.log(req.body[0])
+app.post('/studentpassword',(req,res) => {
+    console.log(req.body)
     connection.query(
         "SELECT password FROM missio20_team3.student where email=? and password = ?", [req.body.email, req.body.password],
         function(error,result){
             console.log(result)
             if (result.length === 0){res.send("you have an error");
-        } else {res.send("Welcome Back");
+        } else {res.send("You Are Logged In!");
         }
         })
 })
 
-app.get('/teacherpassword',(req,res) => {
+app.post('/teacherpassword',(req,res) => {
     console.log(req.body)
     connection.query(
         `SELECT * FROM missio20_team3.teacher where email= ? and password =?`, [req.body.email, req.body.password],
         function(error,result){
             console.log(result)
             if (result.length === 0){res.send("you have an error");
-        } else {res.send("Welcome Back");
+        } else {res.send("You Are Logged In!");
         }
         })
 })

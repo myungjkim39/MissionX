@@ -23,16 +23,15 @@ function Navbar() {
 
             <div className="navrightContainer">
                 <div className="languageContainer">Lang
-                <img
+                <img className="flags"
                     src="src-assets/NavBar/NZFlag.png"
                     alt="animation"
                     />
-                    <img
+                    <img className="flags"
                     src="src-assets/NavBar/MaoriFlag.png"
                     alt="animation"
                     />
                 </div>
-            </div>
 
                 <div className="loginSignupContainer">
                 <img
@@ -40,9 +39,8 @@ function Navbar() {
                     src="src-assets/NavBar/Avatar-white.png"
                     alt="animation"
                     />
-                    <button className="navItem navLogin">Register</button>
-                        <div className="NavloginSignupDivider"></div>
-                    <button className="navItem navSignup">Login</button>
+                    <button className="navItem navLogin">Register | Login</button>
+                    </div>
             
                 </div>
             </div>
