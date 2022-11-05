@@ -46,23 +46,23 @@ export default function StudentSidebar() {
         </div>
 
         <div className="Item">
-        <Link id="link" to={"/studentdashboard/instructions"}>
-          <img src={Instructions} className="Sidebar-icons" alt="" />
-          <span className="Sidebar-Text">INSTRUCTIONS</span>
+          <Link id="link" to={"/studentdashboard/instructions"}>
+            <img src={Instructions} className="Sidebar-icons" alt="" />
+            <span className="Sidebar-Text">INSTRUCTIONS</span>
           </Link>
         </div>
 
         <div className="Item">
-        <Link id="link" to={"/studentdashboard/videotutorial"}>
-          <img src={VideoTutorial} className="Sidebar-icons" alt="" />
-          <span className="Sidebar-Text">VIDEO TUTORIAL</span>
-         </Link>
+          <Link id="link" to={"/studentdashboard/videotutorial"}>
+            <img src={VideoTutorial} className="Sidebar-icons" alt="" />
+            <span className="Sidebar-Text">VIDEO TUTORIAL</span>
+          </Link>
         </div>
 
         <div className="Item">
-        <Link id="link" to={"/studentdashboard/makeproject"}>
-          <img src={MakeProject} className="Sidebar-icons" alt="" />
-          <span className="Sidebar-Text">MAKE PROJECT</span>
+          <Link id="link" to={"/studentdashboard/makeproject"}>
+            <img src={MakeProject} className="Sidebar-icons" alt="" />
+            <span className="Sidebar-Text">MAKE PROJECT</span>
           </Link>
         </div>
 
