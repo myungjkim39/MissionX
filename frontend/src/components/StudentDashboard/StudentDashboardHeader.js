@@ -17,23 +17,22 @@ export default function StudentHeader() {
       </div>
 
       <div className="student-center">
+        <div className="student-circle">1</div>
 
-      <div className="student-circle">1</div>
-
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
-      <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
+        <div className="student-mini-circle"></div>
       </div>
 
       <div className="student-right">
@@ -42,7 +41,11 @@ export default function StudentHeader() {
         <button className="student-projects-btn"> More Projects </button>
 
         <div className="flag-images">
-          <img src="/src-assets/NavBar/NZflag.png" alt="student-nz-Flag" className="student-nz-flag" />
+          <img
+            src="/src-assets/NavBar/NZflag.png"
+            alt="student-nz-Flag"
+            className="student-nz-flag"
+          />
 
           <img
             src="/src-assets/NavBar/Maoriflag.png"
@@ -54,4 +57,3 @@ export default function StudentHeader() {
     </div>
   );
 }
-
