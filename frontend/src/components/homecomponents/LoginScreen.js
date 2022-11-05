@@ -1,82 +1,35 @@
-// import React, { useState } from "react";
-
-// export default function Login() {
-
-//   const [email, setEmail] = useState("");
-
-//   const [password, setPassword] = useState("");
-
-//   function validateForm() {
-
-//     return email.length > 0 && password.length > 0;
-
-//   }
-
-//   function handleSubmit(event) {
-
-//     event.preventDefault();
-
-//   }
-
-//   return (
-
-//     <div className="Login">
-
-//       <Form onSubmit={handleSubmit}>
-
-//         <Form.Group size="lg" controlId="email">
-
-//           <Form.Label>Email</Form.Label>
-
-//           <Form.Control
-
-//             autoFocus
-
-//             type="email"
-
-//             value={email}
-
-//             onChange={(e) => setEmail(e.target.value)}
-
-//           />
-
-//         </Form.Group>
-
-//         <Form.Group size="lg" controlId="password">
-
-//           <Form.Label>Password</Form.Label>
-
-//           <Form.Control
-
-//             type="password"
-
-//             value={password}
-
-//             onChange={(e) => setPassword(e.target.value)}
-
-//           />
-
-//         </Form.Group>
-
-//         <Button block size="lg" type="submit" disabled={!validateForm()}>
-
-//           Login
-
-//         </Button>
-
-//       </Form>
-
-//     </div>
-
-//   );
-
-// }
-
-import React from "react";
 import "./LoginScreen.css";
+import {useState, useEffect} from "react"
+import { Link } from "react-router-dom";
 
-function LoginsScreen() {
+function LoginScreen() {
+
+  const [data, setData] = useState({
+    email: '',
+    password: ''
+  });
+  const {email, password} = data;
+  const handleEmail = (e) => {
+    setData({...data, [e.target.name]: e.target.value})
+  }
+  const checkEmail = () => {
+    const emailcheck = email.find(user => (user.email === data.email && user.password === data.password));
+    if(emailcheck) {
+      console.log("Login successful");
+    }else {
+      console.log("Wrong password or username");
+    }
+    console.log(email);
+    console.log(emailcheck);
+  }
+
+  useEffect(() => {
+    fetch('http://localhost:4000/studentpassword')
+    .then(response => response.json())
+    .then(json => console.log(json))
+    }, []);
   return (
+    <div>
     <div className="loginpage">
       <div className="loginStudents">
         <img
@@ -89,31 +42,34 @@ function LoginsScreen() {
         </div>
         <div className="loginButtonsContainer">
           <button className="loginbuttons">LOG IN</button>
-          <button className="loginbuttons">SIGN UP</button>
+          <Link to="/signup">
+            <button className="loginbuttons">SIGN UP</button>
+          </Link>
         </div>
-          <form action="mailto:surbhig@missionreadyhq.com" method="POST">
+        <form method="POST">
           <div>
             <input
               type="email"
+              value="email"
               name="email"
-              id="email"
               placeholder="Email Address"
+              onChange={handleEmail}
               required
             />
             <br></br>
             <input
               type="text"
-              name="myName"
-              id="myName"
+              name="password"
+              value="password"
               placeholder="Password"
+              onChange={handleEmail}
               required
             />
-            </div>
-            <div className="buttonplaceholder">
-            <button className="loginbutton">Login</button>
-            </div>
-          </form>
-        
+          </div>
+          <div className="buttonplaceholder">
+            <button onClick={handleEmail} className="loginbutton">Login</button>
+          </div>
+        </form>
       </div>
 
       <div className="loginTeachers">
@@ -129,31 +85,34 @@ function LoginsScreen() {
           <button className="loginbuttons">LOG IN</button>
           <button className="loginbuttons">SIGN UP</button>
         </div>
-          <form action="mailto:surbhig@missionreadyhq.com" method="POST">
+        <form action="mailto:surbhig@missionreadyhq.com" method="POST">
           <div>
-          <input
+            <input
               type="email"
               name="email"
-              id="email"
+              value="email"
               placeholder="Email Address"
+              onChange={handleEmail}
               required
             />
             <br></br>
             <input
               type="text"
-              name="myName"
-              id="myName"
+              name="password"
+              value="password"
               placeholder="Password"
+              onChange={handleEmail}
               required
             />
-            </div>
-            <div className="buttonplaceholder">
-            <button className="loginbutton">Login</button>
-            </div>
-          </form>
-        
+          </div>
+          <div className="buttonplaceholder">
+            <button onClick={handleEmail} className="loginbutton">Login</button>
+          </div>
+        </form>
       </div>
+    </div>
     </div>
   );
 }
-export default LoginsScreen;
+
+export default LoginScreen;
