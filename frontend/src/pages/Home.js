@@ -17,7 +17,7 @@ function Home() {
       <Navbar />
       <Header />
       {/* <br /> */}
-      {/* <StudentsCreation /> */}
+      <StudentsCreation />
       {/* <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br />

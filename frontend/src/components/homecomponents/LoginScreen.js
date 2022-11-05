@@ -3,47 +3,31 @@ import {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 
 function LoginScreen() {
-//   const [errorMessages, setErrorMessages] = useState({});
-//   const [isSubmitted, setIsSubmitted] = useState(false);
-//   const errors={email: "invalid email", password: "invalid password"};
-//   const handleSubmit = (e) => {
-//   e.preventDefault();
-// }
-// useEffect(() => {
-//   fetch('http://localhost:4000/studentpassword')
-//   .then(response => response.json())
-//   .then(json => console.log(json))
-//   }, []);
-//   const [data, setData] = useState({
-//     email: '',
-//     password: ''
-//   });
 
-//   const {email, pass} = data;
-//   const changeHandler = (e) => {
-//     setData({...data, [e.target.name]: e.target.value})
-//   }
-//   const handleEmail=(e) =>{
-//     console.log
-//   }
-//   const handlepassword=(e) =>{
-//     console.log
+  const [data, setData] = useState({
+    email: '',
+    password: ''
+  });
+  const {email, password} = data;
+  const handleEmail = (e) => {
+    setData({...data, [e.target.name]: e.target.value})
+  }
+  const checkEmail = () => {
+    const emailcheck = email.find(user => (user.email === data.email && user.password === data.password));
+    if(emailcheck) {
+      console.log("Login successful");
+    }else {
+      console.log("Wrong password or username");
+    }
+    console.log(email);
+    console.log(emailcheck);
+  }
 
-
-//   const checkEmail = () => {
-//     const emailcheck = users.find(user => (user.email === data.email && user.password === data.password));
-//     if(emailcheck) {
-//       console.log("Login successful");
-//     }else {
-//       console.log("Wrong password or username");
-//     }
-//     // console.log(uname);
-//     console.log(emailcheck);
-//   }
-//   useEffect(() => {
-// checkEmail(email)
-//   }, [data.email, data.password])
-
+  useEffect(() => {
+    fetch('http://localhost:4000/studentpassword')
+    .then(response => response.json())
+    .then(json => console.log(json))
+    }, []);
   return (
     <div>
     <div className="loginpage">
@@ -69,7 +53,7 @@ function LoginScreen() {
               value="email"
               name="email"
               placeholder="Email Address"
-              // onChange={handleEmail}
+              onChange={handleEmail}
               required
             />
             <br></br>
@@ -78,12 +62,12 @@ function LoginScreen() {
               name="password"
               value="password"
               placeholder="Password"
-              // onChange={handleEmail}
+              onChange={handleEmail}
               required
             />
           </div>
           <div className="buttonplaceholder">
-            {/* <button onClick={handleEmail} className="loginbutton">Login</button> */}
+            <button onClick={handleEmail} className="loginbutton">Login</button>
           </div>
         </form>
       </div>
@@ -106,21 +90,23 @@ function LoginScreen() {
             <input
               type="email"
               name="email"
-              id="email"
+              value="email"
               placeholder="Email Address"
+              onChange={handleEmail}
               required
             />
             <br></br>
             <input
               type="text"
-              name="myName"
-              id="myName"
+              name="password"
+              value="password"
               placeholder="Password"
+              onChange={handleEmail}
               required
             />
           </div>
           <div className="buttonplaceholder">
-            <button className="loginbutton">Login</button>
+            <button onClick={handleEmail} className="loginbutton">Login</button>
           </div>
         </form>
       </div>
@@ -128,6 +114,5 @@ function LoginScreen() {
     </div>
   );
 }
-
 
 export default LoginScreen;
