@@ -1,23 +1,22 @@
-const express = require('express');
-const cors = require('cors');
-const mysql = require('mysq2');
-const dotenv = require('dotenv')
-const { userRouter } = require('./user.routes');
-
+// Module imports
+const express = require("express");
+const dotenv = require("dotenv").config();
+const cors = require("cors");
 const app = express();
+
+// Middleware
 app.use(cors());
-app.use(express.json());
 
-const connection = mysql.createConnection({
-    host: process.env.MYSQL_HOST,
-    database: process.env.MYSQL_DATABASE,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASS,
-  });  
-app.get('/',(req,res) => {
-  
-})
+// Route Imports
+const videoRouter = require('./routes/videoRoutes');
+const objectiveRouter = require('./routes/objectiveRoutes');
+const instructionRouter = require('./routes/instructionRoutes');
 
-app.use(userRouter);
+// Routes 
+app.use(videoRouter);
+app.use(objectiveRouter);
+app.use(instructionRouter);
 
-app.listen(4000);
+const PORT = process.env.PORT;
+console.log("Server running at port", PORT);
+app.listen(PORT);

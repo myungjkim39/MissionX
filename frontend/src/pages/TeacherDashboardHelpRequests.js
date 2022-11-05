@@ -1,9 +1,9 @@
 import React from 'react'
 import Sidebar from '../components/TeacherSidebar.js';
 import TeacherNavbar from '../components/TeacherDashboardHeader.js';
-import HelpRequest from '../components/HelpRequest.js';
+import HelpRequest from '../components/TeacherHelpRequest.js';
 import TeacherProfileViewer from '../components/TeacherProfileViewer.js';
-import Footer from '../Shared components/Footer';
+import Footer from "../components/Shared-components/Footer.js"
 
 export default function TeacherHelpRequest() {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./Home.css";
+import "./home.css";
 import Navbar from '../components/homecomponents/Navbar'
 import Header from "../components/homecomponents/Header";
 import StudentsCreation from "../components/homecomponents/StudentsCreation";

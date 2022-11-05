@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from "../../components/StudentDashboardHeader.js";
-
-import Footer from "../../Shared components/Footer.js";
+import React from 'react';
+import StudentHeader from "../../components/StudentDashboard/StudentDashboardHeader.js";
+import StudentProject from "../../components/StudentDashboard/StudentDashInstructions.js";
+import Footer from "../../components/Shared-components/Footer.js";
 
 export default function StudentDashboardInstructions() {
   return (
     <div className= "student-dashboard-instructions">
-      < Header />
+      < StudentHeader />
+      < StudentProject />
       < Footer />
     </div>
   )

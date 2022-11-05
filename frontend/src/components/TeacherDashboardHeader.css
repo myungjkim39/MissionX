@@ -1,8 +1,16 @@
-.right {
-    margin-left: 550px;
+.teacher-dash-header{
+  display: flex;
+  height: 8vh;
+  padding-left: 30px;
+  background-color: white;
+}
+
+.teacher-dashheader-right {
+    margin-left: 500px;
+    display: flex;
   }
   
-  .take-screenshot {
+  .teacher-dashheader1-takescreenshot {
     width: 200px;
     height: 35px;
     padding: 5px;
@@ -12,10 +20,11 @@
     color: white;
     font-weight: bold;
     margin-top: 2vh;
+    margin-right: 20px;
     border-radius: 10px;
   }
   
-  .help-centre {
+  .teacher-dashheader1-help-centre {
     width: 200px;
     height: 35px;
     background-color: #FF3399;
@@ -27,10 +36,11 @@
     font-style: nunito;
     font-weight: bold;
     margin-top: 2vh;
+     margin-right: 20px;
     border-radius: 10px;
   }
   
-  .more-projects {
+  .teacher-dashheader1-more-projects {
     width: 200px;
     height: 35px;
     background-color: #6fb9eb;
@@ -40,19 +50,20 @@
     color: white;
     font-weight: bold;
     margin-top: 2vh;
+     margin-right: 60px;
     border-radius: 10px;
   }
-  
-  .flagsimage {
-    margin-bottom: 50px;
+
+  .teacher-dashheader-flagsimage {
+    margin-top: 10px;
   }
   
-  .nzflag {
+  .teacher-dashheader-nzflag {
     height: 12px;
     margin-inline: 5px;
   }
   
-  .maoriflag {
+  .teacher-dashheader-maoriflag {
     width: 22px;
     height: 12px;
   }

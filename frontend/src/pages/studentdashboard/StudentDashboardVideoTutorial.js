@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../components/StudentDashboardHeader.js";
-import VideoTutorial from "../../components/StudentDashVideoTutorial.js";
-import Footer from "../../Shared components/Footer.js";
+import StudentHeader from "../../components/StudentDashboard/StudentDashboardHeader.js";
+import VideoTutorial from "../../components/StudentDashboard/StudentDashVideoTutorial.js";
+import Footer from "../../components/Shared-components/Footer.js";
 export default function StudentDashboardVideoTutorial() {
   return (
     <div className="StudentDashboardVideoTutorial">
-      <Header />
+      <StudentHeader />
       <VideoTutorial />
       <Footer />
     </div>

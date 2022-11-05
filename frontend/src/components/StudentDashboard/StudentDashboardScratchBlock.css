@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.outer-box {
+  display: flex;
+  border: 1px, solid;
+  background-color: #b2e4fa;
+  align-items: center;
+  width: 100vw;
+  height: 60%;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 75vh;
+}
+
+.inner-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 80vw;
+  background-color: #ffffff80;
+  align-items: center;
+}
+
+.student-content {
+  font-style: nunito, bold;
+  color: #707070;
+  opacity: 1;
+  justify-content: center;
+  text-align: center;
+  line-height: 45px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* css only for StudentDashInstructions.js */
+
+.student-inst-content {
+  opacity: 1;
+  margin-left: 15.5vw;
+  margin-right: 15.5vw;
+}
+
+.instructions-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 2vh;
+}
+
+
