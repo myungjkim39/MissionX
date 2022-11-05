@@ -4,7 +4,9 @@
   height: 60px;
 }
 .navlogo {
+  margin-left: 5rem;
   display: flex;
+  margin-top: 2px;
   height: 50px;
   width: 45px;
 }
@@ -12,7 +14,7 @@
 .navList {
   background: rgba(67, 192, 246, 1);
   margin: 0;
-  margin-left: 8rem;
+  margin-left: 18rem;
   display: flex;
   align-items: flex-end;
 }
@@ -34,19 +36,28 @@
 .navrightContainer {
   display: flex;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 2rem;
   flex-direction: column;
 }
 
 .languageContainer {
   display: flex;
   margin-left: auto;
+  margin-right: 2rem;
   align-items: flex-start;
+}
+.flags{
+  margin-top: 5px;
+  width: 22px;
+  height: 12px;
+  margin-inline: 5px;
 }
 .loginSignupContainer {
   display: flex;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 2REM;
+  align-items: flex-end;
+  
 }
 .navLogin {
   display: flex;
@@ -54,22 +65,9 @@
   margin-right: 0px;
   padding: 5px;
 }
-.navSignup {
-  margin-right: auto;
-  margin-left: 0px;
-  padding: 5px;
-}
-.NavloginSignupDivider {
-  display: flex;
-  background-color: antiquewhite;
-  width: 2px;
-  height: 18px;
-  margin-top: auto;
-  margin-bottom: 4px;
-}
 .navAvatar{
   display: flex;
   align-items: flex-end;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
