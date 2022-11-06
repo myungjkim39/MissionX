@@ -16,22 +16,13 @@ function Home() {
     <div className="Homepage">
       <Navbar />
       <Header />
-      <br />
-      <StudentsCreation> students </StudentsCreation>
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br />
-
-      <MiddleOfHomePage>hello</MiddleOfHomePage>
-      <br></br>
-      <br></br>
-      <KeyCompetencies>hello</KeyCompetencies>
-      <br></br><br></br>
-      <Classroom>picture</Classroom>
-      <br></br><br></br><br></br>
-      <Footer></Footer>
+      <div>
+      <StudentsCreation />
+      </div>
+      <MiddleOfHomePage />
+      <KeyCompetencies />
+      <Classroom />
+      <Footer />
 
       
     </div>

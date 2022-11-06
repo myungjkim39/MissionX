@@ -23,8 +23,7 @@ h3{
 .helpRequest-boxContainer {
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 10px;
     /* padding-left: 80px; */
 }
 .help-container{
@@ -75,7 +74,7 @@ h3{
     margin-left: 0px;
 }
 .mark-as-done:hover{
-       background: none;
+    background: none;
     color: rgb(74, 73, 73); 
 }
 

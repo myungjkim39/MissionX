@@ -1,20 +1,5 @@
-/* Please use a div className as this is affecting other people's page as well 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } */
-
-/* Please use a div className as this is affecting other people's page as well
-  body {
-    font-family: Arial;
-    margin-left: 0;
-    margin-right: 0;
-  } */
-
-.studentsCreate {
-  margin-top: 2rem;
-  margin-left: 4rem;
-  width: 50%;
-  height: 30px;
+.Homepage{
+  display:flex;
+  flex-direction: column;
 }
+
