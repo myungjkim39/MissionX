@@ -9,10 +9,13 @@ export default function TeacherDashboardStudentProfiles() {
     //calling components
 
     <div>
+      
       <TeacherDashboardHeader />
+      <div className='studentProfilesetup'>
       <TeacherSidebar />
-
       <StudentProfiles />
+      </div>
+      
       <Footer />
     </div>
   );
