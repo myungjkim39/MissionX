@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import {Link} from "react-router-dom"
 
 function Header() {
   return (
@@ -17,12 +18,10 @@ function Header() {
       <p>Let us help you advance students in Digital Technologies and other learning areas with our project-based learning programme.</p>
       <br></br>
         <div className="homeheader">
-            <button className="homeLearnMore">LEARN MORE</button>
+            <button1 className="homeLearnMore">LEARN MORE</button1>
 
-            
-            <button className="signup">SIGN UP</button>
             <div className="homeSignup">
-            <p>*Basic subscription includes first 15 projects free of charge</p>
+            <Link to="/signup"><button className="signup">SIGN UP</button></Link>
             </div>
         </div>
       </div>

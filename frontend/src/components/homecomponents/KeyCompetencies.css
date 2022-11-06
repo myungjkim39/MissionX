@@ -1,9 +1,17 @@
 .keyCompetencies{
     margin:0;
     background-color: rgba(239, 239, 241, 1);
+    color: #3c3c3c;;
 }
 
 .keyComp{
-    margin-top: 4rem;
-    margin-left: 8rem;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.bulletPoints{
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.keyHeading{
+    margin-left: -10px;  
 }

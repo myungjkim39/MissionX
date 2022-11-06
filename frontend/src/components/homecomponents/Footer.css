@@ -1,14 +1,24 @@
 .homeFooter{
     margin:0;
+    margin-bottom: 0;
+    height: 400px;
     display: flex;
-    height: 20rem;
     background-color: rgba(178, 228, 250, 1);
+    color:#3c3c3c;
 }
 .homeCourses{
-    margin-right: 2rem;
-    margin-left: 4rem;
-    margin-top: 5rem;
+
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-top: 50px;
 }
-.homeSupport{
-    margin-right: 2rem;
+.levelupContact{
+    margin-right: 60px;
+    width:300px
+}
+
+@media only screen and (max-width: 768px){
+    .homeCourses {width: 100%;}
+    .levelupContact {width: 100%;}
+
 }

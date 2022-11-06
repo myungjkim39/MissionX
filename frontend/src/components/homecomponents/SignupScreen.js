@@ -3,6 +3,8 @@ import "./SignupScreen.css";
 import {Link} from "react-router-dom"
 
 function SignupScreen() {
+
+  
   return (
     <div className="loginpage">
       <div className="loginStudents">
@@ -18,7 +20,7 @@ function SignupScreen() {
           <Link to="/login"><button className="loginbuttons">LOG IN</button></Link>
           <button className="loginbuttons">SIGN UP</button>
         </div>
-          <form action="mailto:surbhig@missionreadyhq.com" method="POST">
+          <form>
           <div>
           <input
               type="text"
@@ -72,7 +74,7 @@ function SignupScreen() {
           <button className="loginbuttons">LOG IN</button>
           <button className="loginbuttons">SIGN UP</button>
         </div>
-          <form action="mailto:surbhig@missionreadyhq.com" method="POST">
+          <form>
           <div>
           <input
               type="text"

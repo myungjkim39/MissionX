@@ -1,7 +1,6 @@
 import React from "react";
-import MyButton from './MyButton';
 import "./Navbar.css"
-
+import {Link} from "react-router-dom"
 
 function Navbar() {
     return (
@@ -14,11 +13,11 @@ function Navbar() {
             </div>
             <div className= "navList">
                 
-                    <MyButton buttonName="Home" />
+                    <button>Home</button>
                 
-                    <MyButton buttonName="Features" />
+                    <button>Features</button>
                 
-                    <MyButton buttonName="Teahers" />
+                    <button>Teahers</button>
             </div>
 
             <div className="navrightContainer">
@@ -39,7 +38,7 @@ function Navbar() {
                     src="src-assets/NavBar/Avatar-white.png"
                     alt="animation"
                     />
-                    <button className="navItem navLogin">Register | Login</button>
+                    <Link to="/signup"><button className="navItem navLogin">Register | Login</button></Link>
                     </div>
             
                 </div>
