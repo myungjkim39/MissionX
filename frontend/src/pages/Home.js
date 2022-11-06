@@ -16,21 +16,12 @@ function Home() {
     <div className="Homepage">
       <Navbar />
       <Header />
-      {/* <br /> */}
+      <div>
       <StudentsCreation />
-      {/* <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /> */}
-
+      </div>
       <MiddleOfHomePage />
-      {/* <br></br>
-      <br></br> */}
       <KeyCompetencies />
-      {/* <br></br><br></br> */}
       <Classroom />
-      {/* <br></br><br></br><br></br> */}
       <Footer />
 
       
