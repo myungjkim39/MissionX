@@ -102,7 +102,7 @@ function Sidebar() {
             </div>
 
             <div className="user-profile">
-              <NavLink id="link" to={"/"}>
+              <NavLink id="link" end to={"/"}>
                 <img src={Logout} className="profile-settings" alt="" />{" "}
                 <br></br>
                 <span className="sidebar-text">Log out</span>

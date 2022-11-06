@@ -14,20 +14,72 @@ function TeacherHelpRequest(props) {
   const dateTime = new Date().toDateString();
 
   const studentDatabase = [
-    { name: "AIDEN", profileImage: Aiden, dateTime: dateTime, done: true },
-    { name: "RAWIRI", profileImage: Rawiri, dateTime: dateTime, done: true },
-    { name: "NEVEAH", profileImage: Neveah, dateTime: dateTime, done: false },
-    { name: "JAVIER", profileImage: Javier, dateTime: dateTime, done: false },
-    { name: "TOKIO", profileImage: Tokio, dateTime: dateTime, done: false },
+    {
+      name: "AIDEN",
+      profileImage: Aiden,
+      dateTime: dateTime,
+      done: false,
+      id: 1,
+    },
+    {
+      name: "RAWIRI",
+      profileImage: Rawiri,
+      dateTime: dateTime,
+      done: false,
+      id: 2,
+    },
+    {
+      name: "NEVEAH",
+      profileImage: Neveah,
+      dateTime: dateTime,
+      done: false,
+      id: 3,
+    },
+    {
+      name: "JAVIER",
+      profileImage: Javier,
+      dateTime: dateTime,
+      done: false,
+      id: 4,
+    },
+    {
+      name: "TOKIO",
+      profileImage: Tokio,
+      dateTime: dateTime,
+      done: false,
+      id: 5,
+    },
   ];
+  const [db, setdb] = useState(studentDatabase);
+  const [markasdone, setmarkasdone] = useState([]);
+  useEffect(() => {
+    console.log(markasdone)
+  },[markasdone])
+  
+  function checkboxhelprequest(e) {
+    console.log(e)
+    if (e.target.checked === true) {
+      setmarkasdone(prevIds => [...prevIds, e.target.id])
+    }
+    if (e.target.checked === false) { 
+      const filtered = markasdone.filter(id => id !== e.target.id)
+      setmarkasdone(filtered)
+    }
+  }
+  function markDone() {
+    console.log(markasdone);
+    markasdone.forEach(helpId => {
+      db.forEach((hr, index) => {
+        if (hr.id === parseFloat(helpId)) {
+          console.log(db[index])
+          db[index].done = true
+          setdb([...db])
+        }
+      })
+    })
+  }
+  
 
-  const [tasksArray, setTasksArray] = useState([1, 2, 3, 4, 5]);
-
-  const deleteTaskFromArray = (index) => {
-    // setTasksArray(tasksArray.filter((task) => task !== taskToDelete));
-    let newStudentDatabase = studentDatabase.splice(0, index);
-    let newTaskArray = tasksArray.splice(0, index);
-  };
 
   //   const [task, deleteTask] = useState({ date_created:'dateCreated', done:'done'})
   // useEffect(() => {
@@ -54,20 +106,25 @@ function TeacherHelpRequest(props) {
           <div className="done-tick">
               <><img src={Done} width="17px" alt="" />
                 <h5 className="task">
-                  {/* {index + 1}. {task} */}
                   <button
-                    onClick={() => deleteTaskFromArray()}
+                    onClick={() => markDone()}
                     className="mark-as-done">MARK AS DONE</button>
                 </h5>
               </>
           </div>
         </div>
-        {studentDatabase.map((student) => (
-          <TeacherHelpRequestBox
+        {db.map((student) => (
+          !student.done && (
+            <div className="helpRequest-boxContainer">
+              <input type="checkbox" id={student.id} onChange={e => checkboxhelprequest(e)} />
+              <TeacherHelpRequestBox
             name={student.name}
             profileImage={student.profileImage}
             dateTime={student.dateTime}
           />
+            </div>
+          )
+
         ))}
       </div>
     </div>

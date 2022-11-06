@@ -1,33 +1,44 @@
 import "./LoginScreen.css";
-import {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 
 function LoginScreen() {
 
-  const [data, setData] = useState({
-    email: '',
-    password: ''
-  });
-  const {email, password} = data;
-  const handleEmail = (e) => {
-    setData({...data, [e.target.name]: e.target.value})
-  }
-  const checkEmail = () => {
-    const emailcheck = email.find(user => (user.email === data.email && user.password === data.password));
-    if(emailcheck) {
-      console.log("Login successful");
-    }else {
-      console.log("Wrong password or username");
+  function loginTeacher(event){
+    event.preventDefault()
+    const email=document.getElementById("teacherEmail").value
+    const password=document.getElementById("teacherPassword").value
+    const body={
+      "email":email,
+      "password":password
     }
-    console.log(email);
-    console.log(emailcheck);
+    const requestOptions={
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(body)
+    }
+    fetch("http://localhost:4000/teacherpassword",requestOptions)
+    .then((response) => response.text())
+    .then((result) => alert(result))
+    .catch((error) => alert("error",error))
   }
-
-  useEffect(() => {
-    fetch('http://localhost:4000/studentpassword')
-    .then(response => response.json())
-    .then(json => console.log(json))
-    }, []);
+  function loginStudent(event){
+    event.preventDefault()
+    const email=document.getElementById("studentEmail").value
+    const password=document.getElementById("studentPassword").value
+    const body={
+      "email":email,
+      "password":password
+    }
+    const requestOptions={
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(body)
+    }
+    fetch("http://localhost:4000/studentpassword",requestOptions)
+    .then((response) => response.text())
+    .then((result) => alert(result))
+    .catch((error) => alert("error",error))
+  }
   return (
     <div>
     <div className="loginpage">
@@ -46,28 +57,28 @@ function LoginScreen() {
             <button className="loginbuttons">SIGN UP</button>
           </Link>
         </div>
-        <form method="POST">
+        <form >
           <div>
             <input
               type="email"
-              value="email"
+              id="studentEmail"
               name="email"
               placeholder="Email Address"
-              onChange={handleEmail}
               required
             />
             <br></br>
             <input
               type="text"
               name="password"
-              value="password"
+              id="studentPassword"
               placeholder="Password"
-              onChange={handleEmail}
               required
             />
           </div>
           <div className="buttonplaceholder">
-            <button onClick={handleEmail} className="loginbutton">Login</button>
+            <button  
+            onClick={loginStudent}
+             className="loginbutton">Login</button>
           </div>
         </form>
       </div>
@@ -85,28 +96,26 @@ function LoginScreen() {
           <button className="loginbuttons">LOG IN</button>
           <button className="loginbuttons">SIGN UP</button>
         </div>
-        <form action="mailto:surbhig@missionreadyhq.com" method="POST">
+        <form >
           <div>
             <input
               type="email"
               name="email"
-              value="email"
+              id="teacherEmail"
               placeholder="Email Address"
-              onChange={handleEmail}
               required
             />
             <br></br>
             <input
               type="text"
               name="password"
-              value="password"
+              id="teacherPassword"
               placeholder="Password"
-              onChange={handleEmail}
               required
             />
           </div>
           <div className="buttonplaceholder">
-            <button onClick={handleEmail} className="loginbutton">Login</button>
+            <button onClick={loginTeacher} className="loginbutton">Login</button>
           </div>
         </form>
       </div>
