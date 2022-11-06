@@ -9,7 +9,15 @@
 
 
   .progressTrackerAll{
-  margin: 30px;
+  margin: 10px 50px 200px 200px;
+
+  background-color: #B2E4FA;
+  height: 665px;
+  width: 1250px;
+  position: fixed;
+
+  margin-top: 0px;
+
   }
 
 /* Llight Big Box*/
@@ -24,7 +32,10 @@
    position: fixed;
 
    text-align: left;
-   margin: 30px 50px 83px  236px; 
+   margin: 30px 50px 10px 236px; 
+   margin-left: 50px;
+   margin-bottom: 30px;
+
 }
 
 /*Main Header*/
@@ -34,7 +45,7 @@
    margin-left: 100px;
    margin-bottom: 20px;
    font-weight: 600;
-   font-size: 30px;
+   font-size: 25px;
 }
 
 /*Export option*/
