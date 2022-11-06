@@ -66,10 +66,9 @@ html, body{
     display: flex;
     align-items: center;
     cursor: pointer;
-    /* margin-top: 10px;
-    margin-left: 10px; */
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 .bottom-options {
     display: flex;
@@ -142,6 +141,5 @@ html, body{
 }
 .active>.teacherdash-sidebar-item{
     background-color: #B2E4FA;
-    width: 100%;
-    height: 100vh;
+
 }
