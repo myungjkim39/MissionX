@@ -80,7 +80,7 @@ app.post("/teacherpassword", (req, res) => {
       } else {
         res.send("You Are Logged In!");
       }
-    }
+        }
   );
 });
 
