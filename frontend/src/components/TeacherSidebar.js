@@ -74,7 +74,7 @@ function Sidebar() {
                 <span className="sidebar-text">PROJECT LIBRARY</span>
               </NavLink>
             </div>
-
+<p>test</p>
           <div className="pinkarrow-min">
             <img
               src={ArrowLeft}
