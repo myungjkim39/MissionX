@@ -1,15 +1,65 @@
 .MiddleOfHomePage{
-    margin-left: 4rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: large;
-
+    color: #3c3c3c;;
 }
 .grougImage{
-    margin: 1rem;
-    width: 20%;
-    height: 20%;
+    margin-left: 80px;
+    margin-right: 60px;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
-.buttonHome{
-    margin-left: 4rem;
-    margin-right: 4rem;
+.grougImage1{
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+}
+.grougImage2{
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+}
+.grougImage3{
+    width: 300px;
+    height: 195px;
+    margin-left: 10px;
+   
+}
+.grougImage4{
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+}
+.teachersAndSchools{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: large;
+    color: #3c3c3c;
+}
+
+button1 {
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    border-color: rgba(67, 192, 246, 1);
+    border-style: double;
+    border-width: 2px;
+    margin-inline: 5px ;
+    text-justify: distribute;
+
+}
+.teachersAndSchool{
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    color: #3c3c3c;
+
+}
+button1:hover{
+    background-color:  grey;
+    color: black;
 }

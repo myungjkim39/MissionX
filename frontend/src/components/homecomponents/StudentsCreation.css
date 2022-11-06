@@ -1,14 +1,31 @@
-
-.creation{
-    margin: .3rem;
-    width: 20%;
-    height: 400%;
-
+.underHeader{
+    display: flex;
+    color: #3c3c3c;;
 }
 .studentsCreate{
-        margin-top: 2rem;
-        margin-left: 4rem;
-        width: 50%;
-        height: 30px;
-      
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 50%;
+    height: 500px;
+    text-align: justify;
+}
+.studentCreationbox{
+    margin-top: 30px;
+    width: 420px;
+    height: 131px;
+}
+.creationHeader{
+    margin-top: 30px;
+    margin-left: 0px;
+}
+.creation{
+    margin: 0px;
+    width: 125px;
+    height: 120px;
+}
+.laptopScreens{
+    margin-top: 30px;
+    width: 682px;
+    height: 393px;
+    margin-right: 60px;
 }

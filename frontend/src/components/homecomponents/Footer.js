@@ -36,8 +36,7 @@ function Footer() {
             </div>
             <div className="homeCourses">
             <p>LevelUp Works</p>
-            <br></br>
-            <p>LevelUp Works is an Auckland based enterprise dedicated to developing groung based learning software
+            <p className="levelupContact">LevelUp Works is an Auckland based enterprise dedicated to developing groung based learning software
                 to help teachers response ti he newzealand Digital Technologies & hangarau Matihiko.
                 <br></br><br></br>
                 alan@levelupworks.com
