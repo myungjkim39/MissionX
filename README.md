@@ -1,4 +1,6 @@
 
+# Final project for level 4 Mission Ready project. Level Up website where teachers can track the progress of their students and students can submit their projects.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
