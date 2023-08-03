@@ -30,7 +30,7 @@ Teaming up with the developers at the last mission at Mission Ready’s Full Sta
 ## Project Structure
 
 - `/frontend`: Contains the React frontend code.
-- `/backend`: Includes the Node.js backend code. Also holds the MongoDB data.
+- `/backend`: Includes the Node.js backend code. 
 
 
 ## Getting Started 
